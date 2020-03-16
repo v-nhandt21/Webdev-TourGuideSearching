@@ -17,7 +17,7 @@ POSTGRES = {
 }
 app.config['DEVELOPMENT'] = False
 app.config['DEBUG'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///oxo"#'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
+app.config['SQLALCHEMY_DATABASE_URI'] =                os.environ['DATABASE_URL']       #"postgresql:///oxo"         #'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #'postgresql://noah:noahpostgres@localhost:5432/oxo' #
 #"postgresql:///oxo"#
@@ -94,7 +94,7 @@ def get_all():
 @app.route("/test")
 def test():
     try:
-        engine = create_engine("postgresql:///oxo")#postgresql://noah:noahpostgres@localhost:4600/oxo')
+        engine = create_engine(os.environ['DATABASE_URL'] )#                      "postgresql:///oxo")         #postgresql://noah:noahpostgres@localhost:4600/oxo')
         connection = engine.connect()
         my_query = 'SELECT * FROM guides'
         results = connection.execute(my_query).fetchall()
