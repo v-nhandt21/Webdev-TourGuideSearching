@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/index3/css/style.css">
+    <style></style>
 
 
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -61,9 +62,10 @@
                     
             		<nav class="side-menu">
         				<ul class="nav">
-                            <li><a href="build_profile"><span class="fa fa-user"></span>Main Profile</a></li>
-                            <li class="active"><a href="video_profile"><span class="fa fa-th"></span> Video Intro</a></li>
-                            <li><a href="time_profile"><span class="fa fa-clock-o"></span> Freetime Setup</a></li>
+                            <li ><a href="build_profile"><span class="fa fa-user"></span>CV</a></li>
+                            <li class="active"><a href="video_profile"><span class="fa fa-th"></span>Video</a></li>
+                            <li><a href="time_profile"><span class="fa fa-clock-o"></span>Week</a></li>
+                            <li><a href="#"><span class="fa fa-credit-card"></span>Free</a></li>
                             <!--
         					<li><a href="#"><span class="fa fa-cog"></span> Preview</a></li>
         					<li><a href="#"><span class="fa fa-credit-card"></span> Who can access</a></li>
@@ -86,19 +88,20 @@
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">Video</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value=""placeholder="https://www.youtube.com/embed/jgE3W8PSj2g">
-                                  
                                 </div>
                             </div>
-                        
-                            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jgE3W8PSj2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </center>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <center><iframe class="embed-responsive-item" align="center" width="560" height="315" src="https://www.youtube.com/embed/jgE3W8PSj2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </center>
+                            </div>
+                            
                         </fieldset>
                         <hr>
-                        <div style="padding-left: 200px"  class="form-group">
-                            <div class="button-group-area mt-40">
+                        <fieldset class="fieldset" align="center" style="align-items: center;">
+                            <div class="button-group-area mt-40" >
                                 <input  class="genric-btn info circle" type="submit" value="Update Profile">
                             </div>
-                        </div>
+                        </fieldset>
                     </form>
                 </div>
                 
