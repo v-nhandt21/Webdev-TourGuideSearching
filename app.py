@@ -16,7 +16,7 @@ POSTGRES = {
     'port': '4600',
 }
 app.config['DEVELOPMENT'] = True
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///oxo"#'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #'postgresql://noah:noahpostgres@localhost:5432/oxo' #
