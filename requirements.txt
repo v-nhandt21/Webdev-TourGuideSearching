@@ -5,9 +5,9 @@
 
 #_libgcc_mutex==0.1
 alembic==1.4.1
-ca-certificates==2020.1.1
-certifi==2019.11.28
-click==7.1.1
+#ca-certificates==2020.1.1
+#certifi==2019.11.28
+#click==7.1.1
 flask-migrate==2.5.2
 flask-script==2.0.6
 flask-sqlalchemy==2.4.1
