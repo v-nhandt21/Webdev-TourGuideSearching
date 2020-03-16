@@ -15,9 +15,17 @@ POSTGRES = {
     'host': 'localhost',
     'port': '4600',
 }
-app.config['DEVELOPMENT'] = False
-app.config['DEBUG'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] =                os.environ['DATABASE_URL']       #"postgresql:///oxo"         #'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
+
+DEV=1
+if DEV == 0:
+    app.config['DEVELOPMENT'] = False
+    app.config['DEBUG'] = False
+    app.config['SQLALCHEMY_DATABASE_URI'] =    os.environ['DATABASE_URL']       #"postgresql:///oxo"         #'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
+else:
+    app.config['DEVELOPMENT'] = True
+    app.config['DEBUG'] = True
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///oxo"
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #'postgresql://noah:noahpostgres@localhost:5432/oxo' #
 #"postgresql:///oxo"#
@@ -28,8 +36,6 @@ from models import Guide
 @app.route("/", methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
-
-
 
 @app.route("/company/search_bar", methods=['GET', 'POST'])
 def company_search_bar():
@@ -94,7 +100,10 @@ def get_all():
 @app.route("/test")
 def test():
     try:
-        engine = create_engine(os.environ['DATABASE_URL'] )#                      "postgresql:///oxo")         #postgresql://noah:noahpostgres@localhost:4600/oxo')
+        if DEV:
+            engine = create_engine("postgresql:///oxo")
+        else:
+            engine = create_engine(os.environ['DATABASE_URL'] )#                      "postgresql:///oxo")         #postgresql://noah:noahpostgres@localhost:4600/oxo')
         connection = engine.connect()
         my_query = 'SELECT * FROM guides'
         results = connection.execute(my_query).fetchall()
