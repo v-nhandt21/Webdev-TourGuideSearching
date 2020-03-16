@@ -1,0 +1,996 @@
+(base) noah@DESKTOP-7P8MBFB:~$ sudo apt-get install postgresql postgresql-contrib
+[sudo] password for noah:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  postgresql-10 postgresql-client-10 postgresql-client-common postgresql-common ssl-cert sysstat
+Suggested packages:
+  postgresql-doc locales-all postgresql-doc-10 libjson-perl openssl-blacklist isag
+The following NEW packages will be installed:
+  postgresql postgresql-10 postgresql-client-10 postgresql-client-common postgresql-common postgresql-contrib ssl-cert
+  sysstat
+0 upgraded, 8 newly installed, 0 to remove and 99 not upgraded.
+Need to get 5208 kB of archives.
+After this operation, 20.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-client-common all 190ubuntu0.1 [29.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-client-10 amd64 10.12-0ubuntu0.18.04.1 [937 kB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic/main amd64 ssl-cert all 1.0.39 [17.0 kB]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-common all 190ubuntu0.1 [157 kB]
+Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-10 amd64 10.12-0ubuntu0.18.04.1 [3761 kB]
+Ign:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-10 amd64 10.12-0ubuntu0.18.04.1
+Ign:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql all 10+190ubuntu0.1
+Ign:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-contrib all 10+190ubuntu0.1
+Ign:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 sysstat amd64 11.6.1-1ubuntu0.1
+Err:5 http://security.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-10 amd64 10.12-0ubuntu0.18.04.1
+  Could not connect to archive.ubuntu.com:80 (91.189.88.162). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.149). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.31). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.24). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.174). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.173). - connect (111: Connection refused) [IP: 91.189.88.162 80]
+Err:6 http://security.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql all 10+190ubuntu0.1
+  Unable to connect to archive.ubuntu.com:http: [IP: 91.189.88.162 80]
+Err:7 http://security.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-contrib all 10+190ubuntu0.1
+  Unable to connect to archive.ubuntu.com:http: [IP: 91.189.88.162 80]
+Err:8 http://security.ubuntu.com/ubuntu bionic-updates/main amd64 sysstat amd64 11.6.1-1ubuntu0.1
+  Unable to connect to archive.ubuntu.com:http: [IP: 91.189.88.162 80]
+Fetched 1141 kB in 5min 32s (3437 B/s)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.12-0ubuntu0.18.04.1_amd64.deb  Could not connect to archive.ubuntu.com:80 (91.189.88.162). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.149). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.31). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.24). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.174). - connect (111: Connection refused) Could not connect to archive.ubuntu.com:80 (91.189.88.173). - connect (111: Connection refused) [IP: 91.189.88.162 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-common/postgresql_10+190ubuntu0.1_all.deb  Unable to connect to archive.ubuntu.com:http: [IP: 91.189.88.162 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-common/postgresql-contrib_10+190ubuntu0.1_all.deb  Unable to connect to archive.ubuntu.com:http: [IP: 91.189.88.162 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_11.6.1-1ubuntu0.1_amd64.deb  Unable to connect to archive.ubuntu.com:http: [IP: 91.189.88.162 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+(base) noah@DESKTOP-7P8MBFB:~$ sudo apt-get install postgresql postgresql-contrib
+[sudo] password for noah:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  postgresql-10 postgresql-client-10 postgresql-client-common postgresql-common ssl-cert sysstat
+Suggested packages:
+  postgresql-doc locales-all postgresql-doc-10 libjson-perl openssl-blacklist isag
+The following NEW packages will be installed:
+  postgresql postgresql-10 postgresql-client-10 postgresql-client-common postgresql-common postgresql-contrib ssl-cert
+  sysstat
+0 upgraded, 8 newly installed, 0 to remove and 99 not upgraded.
+Need to get 4067 kB/5208 kB of archives.
+After this operation, 20.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-10 amd64 10.12-0ubuntu0.18.04.1 [3761 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql all 10+190ubuntu0.1 [5884 B]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postgresql-contrib all 10+190ubuntu0.1 [5896 B]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 sysstat amd64 11.6.1-1ubuntu0.1 [295 kB]
+Fetched 2126 kB in 11s (186 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package postgresql-client-common.
+(Reading database ... 38169 files and directories currently installed.)
+Preparing to unpack .../0-postgresql-client-common_190ubuntu0.1_all.deb ...
+Unpacking postgresql-client-common (190ubuntu0.1) ...
+Selecting previously unselected package postgresql-client-10.
+Preparing to unpack .../1-postgresql-client-10_10.12-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking postgresql-client-10 (10.12-0ubuntu0.18.04.1) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../2-ssl-cert_1.0.39_all.deb ...
+Unpacking ssl-cert (1.0.39) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../3-postgresql-common_190ubuntu0.1_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (190ubuntu0.1) ...
+Selecting previously unselected package postgresql-10.
+Preparing to unpack .../4-postgresql-10_10.12-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking postgresql-10 (10.12-0ubuntu0.18.04.1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../5-postgresql_10+190ubuntu0.1_all.deb ...
+Unpacking postgresql (10+190ubuntu0.1) ...
+Selecting previously unselected package postgresql-contrib.
+Preparing to unpack .../6-postgresql-contrib_10+190ubuntu0.1_all.deb ...
+Unpacking postgresql-contrib (10+190ubuntu0.1) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../7-sysstat_11.6.1-1ubuntu0.1_amd64.deb ...
+Unpacking sysstat (11.6.1-1ubuntu0.1) ...
+Setting up sysstat (11.6.1-1ubuntu0.1) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /lib/systemd/system/sysstat.service.
+Setting up ssl-cert (1.0.39) ...
+Setting up postgresql-client-common (190ubuntu0.1) ...
+Setting up postgresql-common (190ubuntu0.1) ...
+Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /lib/systemd/system/postgresql.service.invoke-rc.d: could not determine current runlevel
+Setting up postgresql-client-10 (10.12-0ubuntu0.18.04.1) ...
+update-alternatives: using /usr/share/postgresql/10/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-10 (10.12-0ubuntu0.18.04.1) ...
+Creating new PostgreSQL cluster 10/main ...
+/usr/lib/postgresql/10/bin/initdb -D /var/lib/postgresql/10/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/10/main ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default timezone ... Asia/Bangkok
+selecting dynamic shared memory implementation ... posix
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    /usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
+
+Ver Cluster Port Status Owner    Data directory              Log file
+10  main    5432 down   postgres /var/lib/postgresql/10/main /var/log/postgresql/postgresql-10-main.log
+update-alternatives: using /usr/share/postgresql/10/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+invoke-rc.d: could not determine current runlevel
+Setting up postgresql (10+190ubuntu0.1) ...
+Setting up postgresql-contrib (10+190ubuntu0.1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+
+
+
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createuser --superuser NoahDrisort
+createuser: could not connect to database postgres: could not connect to server: No such file or directory
+        Is the server running locally and accepting
+        connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+(base) noah@DESKTOP-7P8MBFB:~$ psql
+psql: could not connect to server: No such file or directory
+        Is the server running locally and accepting
+        connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+(base) noah@DESKTOP-7P8MBFB:~$ sudo /etc/init.d/postgresql start
+ * Starting PostgreSQL 10 database server                                                                                                                                                                                             [ OK ]
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createuser --superuser NoahDrisort
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u NoahDrisort createdb oxo
+sudo: unknown user: NoahDrisort
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:~$ psql
+psql: FATAL:  role "noah" does not exist
+(base) noah@DESKTOP-7P8MBFB:~$ psql
+psql: FATAL:  role "noah" does not exist
+(base) noah@DESKTOP-7P8MBFB:~$ sudo psql
+psql: FATAL:  role "root" does not exist
+(base) noah@DESKTOP-7P8MBFB:~$ psql -U NoahDrisort
+psql: FATAL:  Peer authentication failed for user "NoahDrisort"
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres psql
+psql (10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+postgres=# \dg
+                                    List of roles
+  Role name  |                         Attributes                         | Member of
+-------------+------------------------------------------------------------+-----------
+ NoahDrisort | Superuser, Create role, Create DB                          | {}
+ postgres    | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres=# ^Z
+[1]+  Stopped                 sudo -u postgres psql
+(base) noah@DESKTOP-7P8MBFB:~$ psql -U NoahDrisort -d oxo
+psql: FATAL:  Peer authentication failed for user "NoahDrisort"
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u NoahDrisort psql
+sudo: unknown user: NoahDrisort
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u NoahDrisort psql -c "ALTER USER NoahDrisort PASSWORD 'Noah_postgre_99';"
+sudo: unknown user: NoahDrisort
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:~$ cd /etc/postgresql/9.3/main/
+-bash: cd: /etc/postgresql/9.3/main/: No such file or directory
+(base) noah@DESKTOP-7P8MBFB:~$ cd etc/postgresql/10/main
+-bash: cd: etc/postgresql/10/main: No such file or directory
+(base) noah@DESKTOP-7P8MBFB:~$ cd etc
+-bash: cd: etc: No such file or directory
+(base) noah@DESKTOP-7P8MBFB:~$ ls
+Anaconda3-5.3.1-Linux-x86_64.sh  anaconda3
+(base) noah@DESKTOP-7P8MBFB:~$ cd /
+(base) noah@DESKTOP-7P8MBFB:/$ ls
+bin  boot  dev  etc  home  init  lib  lib64  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+(base) noah@DESKTOP-7P8MBFB:/$ cd etc/postgresql/10/main
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ ls
+conf.d  environment  pg_ctl.conf  pg_hba.conf  pg_ident.conf  postgresql.conf  start.conf
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ vi pg_hba.conf
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo vi pg_hba.conf
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -u NoahDrisort psql
+sudo: unknown user: NoahDrisort
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$  psql -U NoahDrisort
+psql: FATAL:  Peer authentication failed for user "NoahDrisort"
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -u NoahDrisort createuser --interactive --pwprompt
+sudo: unknown user: NoahDrisort
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -u postgre createuser --interactive --pwprompt
+sudo: unknown user: postgre
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -u postgres createuser --interactive --pwprompt
+Enter name of role to add: NoahDrisort
+Enter password for new role:
+Enter it again:
+Shall the new role be a superuser? (y/n) y
+createuser: creation of new role failed: ERROR:  role "NoahDrisort" already exists
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -u postgres psql
+psql (10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+postgres=# DROP USER NoahDrisort;
+ERROR:  role "noahdrisort" does not exist
+postgres=# \du
+                                    List of roles
+  Role name  |                         Attributes                         | Member of
+-------------+------------------------------------------------------------+-----------
+ NoahDrisort | Superuser, Create role, Create DB                          | {}
+ postgres    | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres=# DROP USER NoahDrisort;
+ERROR:  role "noahdrisort" does not exist
+postgres=# DROP USER 'NoahDrisort';
+ERROR:  syntax error at or near "'NoahDrisort'"
+LINE 1: DROP USER 'NoahDrisort';
+                  ^
+postgres=# DROP USER 'NoahDrisort';
+ERROR:  syntax error at or near "'NoahDrisort'"
+LINE 1: DROP USER 'NoahDrisort';
+                  ^
+postgres=# DROP OWNED BY NoahDrisort
+postgres-# DROP USER NoahDrisort;
+ERROR:  syntax error at or near "DROP"
+LINE 2: DROP USER NoahDrisort;
+        ^
+postgres=# /du
+postgres-# \du
+                                    List of roles
+  Role name  |                         Attributes                         | Member of
+-------------+------------------------------------------------------------+-----------
+ NoahDrisort | Superuser, Create role, Create DB                          | {}
+ postgres    | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres-# sudo -U pgsql initdb
+postgres-# ^Z
+[2]+  Stopped                 sudo -u postgres psql
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -u postgres psql
+psql (10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+postgres=# ^Z
+[3]+  Stopped                 sudo -u postgres psql
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo -U pgsql initdb
+sudo: the `-U' option may only be used with the `-l' option
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo apt-get --purge remove postgresql
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be REMOVED:
+  postgresql*
+0 upgraded, 0 newly installed, 1 to remove and 99 not upgraded.
+After this operation, 63.5 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... 38969 files and directories currently installed.)
+Removing postgresql (10+190ubuntu0.1) ...
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" >> /etc/apt/sources.list.d/pgdg.list.list'
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+OK
+
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo apt update
+Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Get:3 http://apt.postgresql.org/pub/repos/apt bionic-pgdg InRelease [46.3 kB]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [651 kB]
+Get:7 http://apt.postgresql.org/pub/repos/apt bionic-pgdg/main amd64 Packages [179 kB]
+Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [872 kB]
+Get:9 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [211 kB]
+Get:10 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [648 kB]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [215 kB]
+Get:12 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [6756 B]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2700 B]
+Get:14 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [303 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1055 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [326 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [10.1 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [4636 B]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [4028 B]
+Fetched 4788 kB in 19s (247 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+128 packages can be upgraded. Run 'apt list --upgradable' to see them.
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ sudo apt install postgresql
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libllvm6.0 libpq-dev libpq5 postgresql-12 postgresql-client-12
+Suggested packages:
+  postgresql-doc-12 postgresql-doc
+The following NEW packages will be installed:
+  libllvm6.0 postgresql postgresql-12 postgresql-client-12
+The following packages will be upgraded:
+  libpq-dev libpq5
+2 upgraded, 4 newly installed, 0 to remove and 126 not upgraded.
+Need to get 30.8 MB of archives.
+After this operation, 113 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 libllvm6.0 amd64 1:6.0-1ubuntu2 [14.5 MB]
+Get:2 http://apt.postgresql.org/pub/repos/apt bionic-pgdg/main amd64 libpq-dev amd64 12.2-2.pgdg18.04+1 [138 kB]
+Get:3 http://apt.postgresql.org/pub/repos/apt bionic-pgdg/main amd64 libpq5 amd64 12.2-2.pgdg18.04+1 [172 kB]
+Get:4 http://apt.postgresql.org/pub/repos/apt bionic-pgdg/main amd64 postgresql-client-12 amd64 12.2-2.pgdg18.04+1 [1392 kB]
+Get:5 http://apt.postgresql.org/pub/repos/apt bionic-pgdg/main amd64 postgresql-12 amd64 12.2-2.pgdg18.04+1 [14.5 MB]
+Get:6 http://apt.postgresql.org/pub/repos/apt bionic-pgdg/main amd64 postgresql all 12+213.pgdg18.04+1 [62.9 kB]
+Fetched 30.8 MB in 1min 3s (486 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libllvm6.0:amd64.
+(Reading database ... 38966 files and directories currently installed.)
+Preparing to unpack .../0-libllvm6.0_1%3a6.0-1ubuntu2_amd64.deb ...
+Unpacking libllvm6.0:amd64 (1:6.0-1ubuntu2) ...
+Preparing to unpack .../1-libpq-dev_12.2-2.pgdg18.04+1_amd64.deb ...
+Unpacking libpq-dev (12.2-2.pgdg18.04+1) over (10.12-0ubuntu0.18.04.1) ...
+Preparing to unpack .../2-libpq5_12.2-2.pgdg18.04+1_amd64.deb ...
+Unpacking libpq5:amd64 (12.2-2.pgdg18.04+1) over (10.12-0ubuntu0.18.04.1) ...
+Selecting previously unselected package postgresql-client-12.
+Preparing to unpack .../3-postgresql-client-12_12.2-2.pgdg18.04+1_amd64.deb ...
+Unpacking postgresql-client-12 (12.2-2.pgdg18.04+1) ...
+Selecting previously unselected package postgresql-12.
+Preparing to unpack .../4-postgresql-12_12.2-2.pgdg18.04+1_amd64.deb ...
+Unpacking postgresql-12 (12.2-2.pgdg18.04+1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../5-postgresql_12+213.pgdg18.04+1_all.deb ...
+Unpacking postgresql (12+213.pgdg18.04+1) ...
+Setting up libllvm6.0:amd64 (1:6.0-1ubuntu2) ...
+Setting up libpq5:amd64 (12.2-2.pgdg18.04+1) ...
+Setting up libpq-dev (12.2-2.pgdg18.04+1) ...
+Setting up postgresql-client-12 (12.2-2.pgdg18.04+1) ...
+update-alternatives: using /usr/share/postgresql/12/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-12 (12.2-2.pgdg18.04+1) ...
+Creating new PostgreSQL cluster 12/main ...
+/usr/lib/postgresql/12/bin/initdb -D /var/lib/postgresql/12/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/12/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Asia/Bangkok
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    /usr/lib/postgresql/12/bin/pg_ctl -D /var/lib/postgresql/12/main -l logfile start
+
+Ver Cluster Port Status Owner    Data directory              Log file
+12  main    5433 down   postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log
+update-alternatives: using /usr/share/postgresql/12/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+invoke-rc.d: could not determine current runlevel
+Setting up postgresql (12+213.pgdg18.04+1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for postgresql-common (190ubuntu0.1) ...
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+(base) noah@DESKTOP-7P8MBFB:/etc/postgresql/10/main$ cd
+(base) noah@DESKTOP-7P8MBFB:~$ sudo service postgresql start
+ * Starting PostgreSQL 10 database server                                                                                                                                                                                             [ OK ]
+ * Starting PostgreSQL 12 database server                                                                                                                                                                                             [ OK ]
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres psql
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+postgres=# \du
+                                    List of roles
+  Role name  |                         Attributes                         | Member of
+-------------+------------------------------------------------------------+-----------
+ NoahDrisort | Superuser, Create role, Create DB                          | {}
+ postgres    | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres=# sudo -u postgres createuser --interactive --pwprompt
+postgres-# ^Z
+[4]+  Stopped                 sudo -u postgres psql
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createuser --interactive --pwprompt
+Enter name of role to add: Noah
+Enter password for new role:
+Enter it again:
+Shall the new role be a superuser? (y/n) y
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres psql
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+postgres=# /du
+postgres-# \du
+                                    List of roles
+  Role name  |                         Attributes                         | Member of
+-------------+------------------------------------------------------------+-----------
+ Noah        | Superuser, Create role, Create DB                          | {}
+ NoahDrisort | Superuser, Create role, Create DB                          | {}
+ postgres    | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres-# sudo -u postgres createdb --owner=use^Zname db_name_goes_here
+[5]+  Stopped                 sudo -u postgres psql
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createdb --owner=NoahDrisort oxo
+WARNING:  could not flush dirty data: Function not implemented
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createdb --owner=Noah oxo
+createdb: database creation failed: ERROR:  database "oxo" already exists
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createdb --owner=noah oxo
+createdb: database creation failed: ERROR:  role "noah" does not exist
+(base) noah@DESKTOP-7P8MBFB:~$ psql -U NoahDrisort -d oxo
+psql: error: could not connect to server: FATAL:  Peer authentication failed for user "NoahDrisort"
+(base) noah@DESKTOP-7P8MBFB:~$ sudo adduser NoahDrisort
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+(base) noah@DESKTOP-7P8MBFB:~$ psql -U NoahDrisort -d oxo
+psql: error: could not connect to server: FATAL:  Peer authentication failed for user "NoahDrisort"
+(base) noah@DESKTOP-7P8MBFB:~$ cut -d: -f1 /etc/passwd
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+gnats
+nobody
+systemd-network
+systemd-resolve
+syslog
+messagebus
+_apt
+lxd
+uuidd
+dnsmasq
+landscape
+sshd
+pollinate
+noah
+mysql
+redis
+postgres
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createuser --interactive --pwprompt
+Enter name of role to add: noah
+Enter password for new role:
+Enter it again:
+Shall the new role be a superuser? (y/n) y
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createdb --owner=noah oxo
+createdb: database creation failed: ERROR:  database "oxo" already exists
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createdb --owner=noah xox
+WARNING:  could not flush dirty data: Function not implemented
+
+
+
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres psql -d xox
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+xox=# ^Z
+[6]+  Stopped                 sudo -u postgres psql -d xox
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u noah psql xox
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+xox=# Host: 127.0.0.1
+xox-# ^Z
+[7]+  Stopped                 sudo -u noah  
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres dropuser NoahDrisort
+dropuser: removal of role "NoahDrisort" failed: ERROR:  role "NoahDrisort" cannot be dropped because some objects depend on it
+DETAIL:  owner of database oxo
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres dropdb oxo
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres dropdb xox
+dropdb: database removal failed: ERROR:  database "xox" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres dropuser Noah
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres dropuser NoahDrisort
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u noah psql
+psql: error: could not connect to server: FATAL:  database "noah" does not exist
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u psql psql
+sudo: unknown user: psql
+sudo: unable to initialize policy plugin
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres psql
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+postgres=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Member of
+-----------+------------------------------------------------------------+-----------
+ noah      | Superuser, Create role, Create DB                          | {}
+ postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres=# ^Z
+[8]+  Stopped                 sudo -u postgres psql
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres createdb --owner=noah oxo
+WARNING:  could not flush dirty data: Function not implemented
+        (base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$ sudo -u postgres dropdb xox
+dropdb: database removal failed: ERROR:  database "xox" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+(base) noah@DESKTOP-7P8MBFB:~$ sudo su noah
+(base) noah@DESKTOP-7P8MBFB:~$ psql -U noah -d oxo -W
+Password:
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+oxo=# select * from users;
+ERROR:  relation "users" does not exist
+LINE 1: select * from users;
+                      ^
+oxo=# \dt
+Did not find any relations.
+oxo=# sudo snap install --classic heroku^Z
+[1]+  Stopped                 psql -U noah -d oxo -W
+(base) noah@DESKTOP-7P8MBFB:~$ sudo snap install --classic heroku
+Interacting with snapd is not yet supported on Windows Subsystem for Linux.
+This command has been left available for documentation purposes only.
+(base) noah@DESKTOP-7P8MBFB:~$ curl https://cli-assets.heroku.com/install.sh | sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1892  100  1892    0     0   3610      0 --:--:-- --:--:-- --:--:--  3617
+This script requires superuser access.
+You will be prompted for your password by sudo.
+[sudo] password for noah:
+
+
+
+
+Installing CLI from https://cli-assets.heroku.com/heroku-linux-x64.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 17.6M  100 17.6M    0     0   172k      0  0:01:45  0:01:45 --:--:-- 2797k
+v12.13.0
+heroku installed to /usr/local/bin/heroku
+heroku/7.39.0 linux-x64 node-v12.13.0
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$
+(base) noah@DESKTOP-7P8MBFB:~$ heroku --version
+heroku/7.39.0 linux-x64 node-v12.13.0
+(base) noah@DESKTOP-7P8MBFB:~$ heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/e6db00a5-0700-42fc-9d34-5cba58f43ac3
+Warning: spawn cmd.exe ENOENT
+ ›   Warning: Cannot open browser.
+Logging in... done
+Logged in as xojziyfay@gmail.com
+(base) noah@DESKTOP-7P8MBFB:~$ sdfconda crsdfasdfeateconda create -n myenv python=3.6asdfasdfsdfasdf
+^Z
+[2]+  Stopped                 sdfconda crsdfasdfeateconda create -n myenv python=3.6asdfasdfsdfasdf
+(base) noah@DESKTOP-7P8MBFB:~$ sdfconda crsdfasdfeateconda create -n myenv python=3.6asdfasdfsdfasdf
+^Z
+[3]+  Stopped                 sdfconda crsdfasdfeateconda create -n myenv python=3.6asdfasdfsdfasdf
+(base) noah@DESKTOP-7P8MBFB:~$ conda create -n oxo python=3.6
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/noah/anaconda3/envs/oxo
+
+  added / updated specs:
+    - python=3.6
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    setuptools-46.0.0          |           py36_0         519 KB
+    ------------------------------------------------------------
+                                           Total:         519 KB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.1.1-0
+  certifi            pkgs/main/linux-64::certifi-2019.11.28-py36_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.2.1-hd88cf55_4
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_0
+  openssl            pkgs/main/linux-64::openssl-1.1.1d-h7b6447c_4
+  pip                pkgs/main/linux-64::pip-20.0.2-py36_1
+  python             pkgs/main/linux-64::python-3.6.10-h0371630_0
+  readline           pkgs/main/linux-64::readline-7.0-h7b6447c_5
+  setuptools         pkgs/main/linux-64::setuptools-46.0.0-py36_0
+  sqlite             pkgs/main/linux-64::sqlite-3.31.1-h7b6447c_0
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  wheel              pkgs/main/linux-64::wheel-0.34.2-py36_0
+  xz                 pkgs/main/linux-64::xz-5.2.4-h14c3975_4
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+setuptools-46.0.0    | 519 KB    | ################################################################################################################################################################################################## | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate oxo
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) noah@DESKTOP-7P8MBFB:~$ conda activate oxo
+(oxo) noah@DESKTOP-7P8MBFB:~$ ls
+Anaconda3-5.3.1-Linux-x86_64.sh  anaconda3
+(oxo) noah@DESKTOP-7P8MBFB:~$ cd /
+(oxo) noah@DESKTOP-7P8MBFB:/$ ls
+bin  boot  dev  etc  home  init  lib  lib64  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+(oxo) noah@DESKTOP-7P8MBFB:/$ cd mnt
+(oxo) noah@DESKTOP-7P8MBFB:/mnt$ cd c
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c$ mkdir oxo
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c$ cd oxo
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ pip install Flaskpip install Flask
+^Z
+[4]+  Stopped                 pip install Flaskpip install Flask
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ pip install Flask
+Requirement already satisfied: Flask in /home/noah/.local/lib/python3.6/site-packages (1.1.1)
+Requirement already satisfied: Werkzeug>=0.15 in /home/noah/.local/lib/python3.6/site-packages (from Flask) (1.0.0)
+Collecting click>=5.1
+  Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 31 kB/s
+Requirement already satisfied: itsdangerous>=0.24 in /home/noah/.local/lib/python3.6/site-packages (from Flask) (1.1.0)
+Requirement already satisfied: Jinja2>=2.10.1 in /home/noah/.local/lib/python3.6/site-packages (from Flask) (2.11.1)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+Installing collected packages: click, MarkupSafe
+Successfully installed MarkupSafe-1.1.1 click-7.1.1
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [13/Mar/2020 19:45:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2020 19:45:06] "GET /favicon.ico HTTP/1.1" 404 -
+^@^@^C(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ pip install flask_sqlalchemy
+Collecting flask_sqlalchemy
+  Downloading Flask_SQLAlchemy-2.4.1-py2.py3-none-any.whl (17 kB)
+Requirement already satisfied: Flask>=0.10 in /home/noah/.local/lib/python3.6/site-packages (from flask_sqlalchemy) (1.1.1)
+Collecting SQLAlchemy>=0.8.0
+  Downloading SQLAlchemy-1.3.15.tar.gz (6.1 MB)
+     |████████████████████████████████| 6.1 MB 11.2 MB/s
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Requirement already satisfied: click>=5.1 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from Flask>=0.10->flask_sqlalchemy) (7.1.1)
+Requirement already satisfied: Jinja2>=2.10.1 in /home/noah/.local/lib/python3.6/site-packages (from Flask>=0.10->flask_sqlalchemy) (2.11.1)
+Requirement already satisfied: itsdangerous>=0.24 in /home/noah/.local/lib/python3.6/site-packages (from Flask>=0.10->flask_sqlalchemy) (1.1.0)
+Requirement already satisfied: Werkzeug>=0.15 in /home/noah/.local/lib/python3.6/site-packages (from Flask>=0.10->flask_sqlalchemy) (1.0.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from Jinja2>=2.10.1->Flask>=0.10->flask_sqlalchemy) (1.1.1)
+Building wheels for collected packages: SQLAlchemy
+  Building wheel for SQLAlchemy (PEP 517) ... done
+  Created wheel for SQLAlchemy: filename=SQLAlchemy-1.3.15-cp36-cp36m-linux_x86_64.whl size=1230271 sha256=0d210324f4feb23aba4cc826a4dad338f3adc64f03066e09b533f5ade47ad4f8
+  Stored in directory: /home/noah/.cache/pip/wheels/4a/1b/3a/c73044d7be48baeb47cbee343334f7803726ca1e9ba7b29095
+Successfully built SQLAlchemy
+Installing collected packages: SQLAlchemy, flask-sqlalchemy
+Successfully installed SQLAlchemy-1.3.15 flask-sqlalchemy-2.4.1
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ export APP_SETTINGS="config.DevelopmentConfig"
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ export DATABASE_URL="postgresql://localhost/oxo"
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ echo $DATABASE_URL
+postgresql://localhost/oxo
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ pip install flask_script
+
+Collecting flask_script
+  Downloading Flask-Script-2.0.6.tar.gz (43 kB)
+     |████████████████████████████████| 43 kB 96 kB/s
+Requirement already satisfied: Flask in /home/noah/.local/lib/python3.6/site-packages (from flask_script) (1.1.1)
+Requirement already satisfied: click>=5.1 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from Flask->flask_script) (7.1.1)
+Requirement already satisfied: Jinja2>=2.10.1 in /home/noah/.local/lib/python3.6/site-packages (from Flask->flask_script) (2.11.1)
+Requirement already satisfied: itsdangerous>=0.24 in /home/noah/.local/lib/python3.6/site-packages (from Flask->flask_script) (1.1.0)
+Requirement already satisfied: Werkzeug>=0.15 in /home/noah/.local/lib/python3.6/site-packages (from Flask->flask_script) (1.0.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from Jinja2>=2.10.1->Flask->flask_script) (1.1.1)
+Building wheels for collected packages: flask-script
+  Building wheel for flask-script (setup.py) ... done
+  Created wheel for flask-script: filename=Flask_Script-2.0.6-py3-none-any.whl size=14015 sha256=7b5b2e261216e145bdc7bc9e6f24d5e42d3dfd37c7d1dc9735e92708f620b6b1
+  Stored in directory: /home/noah/.cache/pip/wheels/39/75/7b/11f0def239fcb1799611494670718eb7b59b633494cda10388
+Successfully built flask-script
+Installing collected packages: flask-script
+Successfully installed flask-script-2.0.6
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ pip install flask_migrate
+
+Collecting flask_migrate
+  Downloading Flask_Migrate-2.5.2-py2.py3-none-any.whl (13 kB)
+Requirement already satisfied: Flask>=0.9 in /home/noah/.local/lib/python3.6/site-packages (from flask_migrate) (1.1.1)
+Collecting alembic>=0.7
+  Downloading alembic-1.4.1.tar.gz (1.1 MB)
+     |████████████████████████████████| 1.1 MB 706 kB/s
+Requirement already satisfied: Flask-SQLAlchemy>=1.0 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from flask_migrate) (2.4.1)
+Requirement already satisfied: Werkzeug>=0.15 in /home/noah/.local/lib/python3.6/site-packages (from Flask>=0.9->flask_migrate) (1.0.0)
+Requirement already satisfied: Jinja2>=2.10.1 in /home/noah/.local/lib/python3.6/site-packages (from Flask>=0.9->flask_migrate) (2.11.1)
+Requirement already satisfied: click>=5.1 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from Flask>=0.9->flask_migrate) (7.1.1)
+Requirement already satisfied: itsdangerous>=0.24 in /home/noah/.local/lib/python3.6/site-packages (from Flask>=0.9->flask_migrate) (1.1.0)
+Requirement already satisfied: SQLAlchemy>=1.1.0 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from alembic>=0.7->flask_migrate) (1.3.15)
+Collecting Mako
+  Downloading Mako-1.1.2-py2.py3-none-any.whl (75 kB)
+     |████████████████████████████████| 75 kB 588 kB/s
+Collecting python-editor>=0.3
+  Downloading python_editor-1.0.4-py3-none-any.whl (4.9 kB)
+Collecting python-dateutil
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Requirement already satisfied: MarkupSafe>=0.23 in /home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages (from Jinja2>=2.10.1->Flask>=0.9->flask_migrate) (1.1.1)
+Collecting six>=1.5
+  Using cached six-1.14.0-py2.py3-none-any.whl (10 kB)
+Building wheels for collected packages: alembic
+  Building wheel for alembic (setup.py) ... done
+  Created wheel for alembic: filename=alembic-1.4.1-py2.py3-none-any.whl size=158154 sha256=ec28afbf473e2848359d7308b8762b24f736d7f72243f8c6982e40ebc9c2bd56
+  Stored in directory: /home/noah/.cache/pip/wheels/e9/7b/aa/e18c983d8236b141f85838ba0f8e4e4ae9bcf7f1e00ff726ec
+Successfully built alembic
+Installing collected packages: Mako, python-editor, six, python-dateutil, alembic, flask-migrate
+Successfully installed Mako-1.1.2 alembic-1.4.1 flask-migrate-2.5.2 python-dateutil-2.8.1 python-editor-1.0.4 six-1.14.0
+
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ pip install psycopg2-binary
+
+Collecting psycopg2-binary
+  Downloading psycopg2_binary-2.8.4-cp36-cp36m-manylinux1_x86_64.whl (2.9 MB)
+     |████████████████████████████████| 2.9 MB 313 kB/s
+Installing collected packages: psycopg2-binary
+Successfully installed psycopg2-binary-2.8.4
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db init
+Traceback (most recent call last):
+  File "manage.py", line 4, in <module>
+    from app import app, db
+  File "/mnt/c/oxo/app.py", line 6, in <module>
+    app.config.from_object(os.environ['APP_SETTINGS'])
+NameError: name 'os' is not defined
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db init
+  Creating directory /mnt/c/oxo/migrations ...  done
+  Creating directory /mnt/c/oxo/migrations/versions ...  done
+  Generating /mnt/c/oxo/migrations/README ...  done
+  Generating /mnt/c/oxo/migrations/alembic.ini ...  done
+  Generating /mnt/c/oxo/migrations/env.py ...  done
+  Generating /mnt/c/oxo/migrations/script.py.mako ...  done
+  Please edit configuration/connection/logging settings in '/mnt/c/oxo/migrations/alembic.ini' before proceeding.
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrate
+
+Traceback (most recent call last):
+  
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/psycopg2/__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: fe_sendauth: no password supplied
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/psycopg2/__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) fe_sendauth: no password supplied
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrates
+usage: Perform database migrations
+manage.py db: error: invalid choice: 'migrates' (choose from 'init', 'revision', 'migrate', 'edit', 'merge', 'upgrade', 'downgrade', 'show', 'history', 'heads', 'branches', 'current', 'stamp')
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrate
+Traceback (most recent call last):
+  
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/psycopg2/__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: fe_sendauth: no password supplied
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/psycopg2/__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) fe_sendauth: no password supplied
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ export DATABASE_URL="postgresql:noah//localhost:5000/oxo"
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrate
+Traceback (most recent call last):
+ 
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/sqlalchemy/engine/url.py", line 291, in _parse_rfc1738_args
+    "Could not parse rfc1738 URL from string '%s'" % name
+sqlalchemy.exc.ArgumentError: Could not parse rfc1738 URL from string 'postgresql:noah//localhost:5000/oxo'
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ export DATABASE_URL="postgresql://noah@localhost:5000/oxo"
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrate
+Traceback (most recent call last):
+
+
+
+The above exception was the direct cause of the following exception:
+
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ export DATABASE_URL="postgresql:////oxo"
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrate
+Traceback (most recent call last):
+ 
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/psycopg2/__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "/oxo" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  
+
+  File "/home/noah/anaconda3/envs/oxo/lib/python3.6/site-packages/psycopg2/__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "/oxo" does not exist
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ export DATABASE_URL="postgresql:///oxo"
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db migrate
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.autogenerate.compare] Detected added table 'guides'
+  Generating /mnt/c/oxo/migrations/versions/3f5deba26bfc_.py ...  done
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py db upgrade
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 3f5deba26bfc, empty message
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ sudo -u noah psql oxo
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+oxo=# \dt
+            List of relations
+ Schema |      Name       | Type  | Owner
+--------+-----------------+-------+-------
+ public | alembic_version | table | noah
+ public | guides          | table | noah
+(2 rows)
+
+oxo=# \d guides
+                                  Table "public.guides"
+  Column  |       Type        | Collation | Nullable |              Default
+----------+-------------------+-----------+----------+------------------------------------
+ id       | integer           |           | not null | nextval('guides_id_seq'::regclass)
+ name     | character varying |           |          |
+ password | integer           |           |          |
+ gender   | integer           |           |          |
+Indexes:
+    "guides_pkey" PRIMARY KEY, btree (id)
+
+oxo=# ^Z
+[5]+  Stopped                 sudo -u noah psql oxo
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ python manage.py runserver
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Debugger is active!
+ * Debugger PIN: 789-336-674
+127.0.0.1 - - [13/Mar/2020 20:52:11] "GET /add?name=Twilight&password=12345678&gender=1 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2020 20:52:31] "GET /get/ HTTP/1.1" 404 -
+127.0.0.1 - - [13/Mar/2020 20:52:39] "GET /get/ HTTP/1.1" 404 -
+127.0.0.1 - - [13/Mar/2020 20:53:15] "GET /getall HTTP/1.1" 200 -
+ * Detected change in '/mnt/c/oxo/app.py', reloading
+ * Restarting with stat
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Debugger is active!
+ * Debugger PIN: 789-336-674
+ * Detected change in '/mnt/c/oxo/app.py', reloading
+ * Restarting with stat
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Debugger is active!
+ * Debugger PIN: 789-336-674
+127.0.0.1 - - [13/Mar/2020 21:18:05] "GET /getall HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2020 21:19:19] "GET /get/1 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2020 21:19:25] "GET /get/0 HTTP/1.1" 200 -
+^Z
+[6]+  Stopped                 python manage.py runserver
+(oxo) noah@DESKTOP-7P8MBFB:/mnt/c/oxo$ sudo -u noah psql oxo
+psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1), server 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help.
+
+oxo=# ALTER TABLE oxo
+oxo-# ADD COLUMN age Integer();
+ERROR:  syntax error at or near "("
+LINE 2: ADD COLUMN age Integer();
+                              ^
+oxo=# ALTER TABLE oxo
+ADD COLUMN age Integer;
+ERROR:  relation "oxo" does not exist
+oxo=# \d
+              List of relations
+ Schema |      Name       |   Type   | Owner
+--------+-----------------+----------+-------
+ public | alembic_version | table    | noah
+ public | guides          | table    | noah
+ public | guides_id_seq   | sequence | noah
+(3 rows)
+
+oxo=# ALTER TABLE guides
+oxo-# ADD COLUMN age Integer;
+ALTER TABLE
+oxo=# \d
+              List of relations
+ Schema |      Name       |   Type   | Owner
+--------+-----------------+----------+-------
+ public | alembic_version | table    | noah
+ public | guides          | table    | noah
+ public | guides_id_seq   | sequence | noah
+(3 rows)
+
+oxo=# \d guides
+                                  Table "public.guides"
+  Column  |       Type        | Collation | Nullable |              Default
+----------+-------------------+-----------+----------+------------------------------------
+ id       | integer           |           | not null | nextval('guides_id_seq'::regclass)
+ name     | character varying |           |          |
+ password | integer           |           |          |
+ gender   | integer           |           |          |
+ age      | integer           |           |          |
+Indexes:
+    "guides_pkey" PRIMARY KEY, btree (id)
+
+oxo=# Select * from guides
+oxo-#
+oxo-# guides
+oxo-# Select * from guides;
+ERROR:  syntax error at or near "Select"
+LINE 3: Select * from guides;
+        ^
+oxo=# Select * from guides;
+ id |   name   | password | gender | age
+----+----------+----------+--------+-----
+  1 | Twilight | 35361181 |      1 |
+(1 row)
+
+oxo=#
+
+

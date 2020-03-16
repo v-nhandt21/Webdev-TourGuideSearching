@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Azenta Template">
+    <meta name="keywords" content="Azenta, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Azenta | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="icon_close"></i>
+        </div>
+        <div class="language-bar">
+            <div class="language-option">
+                <img src="img/flag.png" alt="">
+                <span>English</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="flag-dropdown">
+                    <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">China</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="property-btn">
+                <a href="#" class="property-sub">Submit Property</a>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./property.html">Property</a></li>
+                <li><a href="./about-us.html">Agets</a></li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./property-details.html">Pages</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-logo-right">
+            <ul>
+                <li>
+                    <i class="icon_phone"></i>
+                    <div class="info-text">
+                        <span>Phone:</span>
+                        <p>(+12) 345 6789</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="icon_map"></i>
+                    <div class="info-text">
+                        <span>Address:</span>
+                        <p>16 Creek Ave, <span>NY</span></p>
+                    </div>
+                </li>
+                <li>
+                    <i class="icon_mail"></i>
+                    <div class="info-text">
+                        <span>Email:</span>
+                        <p>Info.cololib@gmail.com</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <nav class="main-menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./property.html">Property</a></li>
+                                <li><a href="./about-us.html">Agets</a></li>
+                                <li class="active"><a href="./blog.html">News</a></li>
+                                <li><a href="./property-details.html">Pages</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="top-right">
+                            <div class="language-option">
+                                <img src="img/flag.png" alt="">
+                                <span>English</span>
+                                <i class="fa fa-angle-down"></i>
+                                <div class="flag-dropdown">
+                                    <ul>
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Germany</a></li>
+                                        <li><a href="#">China</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="property-sub">Submit Property</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="nav-logo-right">
+                            <ul>
+                                <li>
+                                    <i class="icon_phone"></i>
+                                    <div class="info-text">
+                                        <span>Phone:</span>
+                                        <p>(+12) 345 6789</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon_map"></i>
+                                    <div class="info-text">
+                                        <span>Address:</span>
+                                        <p>16 Creek Ave, <span>NY</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon_mail"></i>
+                                    <div class="info-text">
+                                        <span>Email:</span>
+                                        <p>Info.cololib@gmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Blog Details Hero Section Begin -->
+    <section class="blog-details-hero set-bg" data-setbg="img/blog/blog-details-hero.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bd-hero-text">
+                        <span>Real Estate</span>
+                        <h2>Galliford saves hardest for last on <br />Thames resi scheme</h2>
+                        <ul>
+                            <li><i class="fa fa-user"></i> Adam Smith</li>
+                            <li><i class="fa fa-clock-o"></i> 12th Feb, 2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Blog Details Hero Section Begin -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 offset-lg-1">
+                    <div class="blog-details-social">
+                        <h6>Share</h6>
+                        <div class="social-list">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="blog-details-title">
+                        <h4>There is no better advertisement campaign that is low cost and also successful at the same
+                            time.</h4>
+                        <p>Great business ideas when utilized effectively can save lots of money. This is not only easy
+                            for those who work full-time as an advertiser, but also for those who work from home.
+                            Advertising from home is also a low cost option, which involves making and distributing
+                            fliers. Usually potential customers will visit home for business dealing. Print good amount
+                            of fliers and give it to anyone who is visiting home like family, friends, mailman, etc.
+                            Business cards can also be distributed. Few selected people can be given sample of the
+                            product. For those who work outside home, employ college students to distribute fliers at
+                            supermarkets, community centers, or malls, especially on weekends, when there is a rush.</p>
+                        <p>Spread the word by the mouth. Talk to everyone about the product and ask them to talk about
+                            it to others. It’s a very powerful tool to increase the network and doesn’t even cost
+                            anything. When receiving a casual call from family members and friends, don’t forget to tell
+                            them about the latest events, discounts and promotions and ask them about what they are up
+                            to. If the parties are into the business, it won’t hurt to promote each other. Joint
+                            ventures can be started with trustable people of the same trade. The only cost that will be
+                            incurred during the whole process is of printing fliers. For a better quality, professional
+                            can be hired to design them, as they will be able to play with colors and write motivating
+                            material.</p>
+                        <div class="blog-quote">
+                            <p>“Hospitality is a very wide field to talk about, so in this article I’ll share few tips,
+                                small things that will make a big impact on your customers’ experience”.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="blog-details-pic">
+                        <div class="bd-pic-item small-item set-bg" data-setbg="img/blog/blog-details-1.jpg"></div>
+                        <div class="bd-pic-item small-item set-bg" data-setbg="img/blog/blog-details-2.jpg"></div>
+                        <div class="bd-pic-item large-item set-bg" data-setbg="img/blog/blog-details-3.jpg"></div>
+                        <div class="bd-pic-item wide-item set-bg" data-setbg="img/blog/blog-details-4.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="blog-more-details">
+                        <h4>Fliers and business cards can be tacked.</h4>
+                        <p>But before doing so, check out with the human resource department before placing the
+                            information as most of the HR departments make it compulsory to consult them. Parents are
+                            required to be in regular touch with the teachers to know about the progress of the child
+                            and they have meetings from time to time. Do not miss this opportunity and spread the word.
+                            Hand them the business card and fliers personally at the meeting, instead of just giving the
+                            contact number. Get involved with fundraiser at schools, as it’s a nice approach to market
+                            business. Prior to handing out the order received, collect all necessary information like
+                            business card pack, fliers, with proper information. Information can be based on what is the
+                            company about, what are the products and services provided, or how to get in touch with the
+                            company. In each individual order, carefully place all of them and seal the package
+                            properly. Presentation, too, is of importance and should be paid attention.</p>
+                    </div>
+                    <div class="tag-share-option">
+                        <div class="tags">
+                            <a href="#">Real Estate</a>
+                            <a href="#">Properties</a>
+                        </div>
+                        <div class="social-share">
+                            <span>Share:</span>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="comment-option">
+                        <h4>2 Comments</h4>
+                        <div class="single-comment-item first-comment">
+                            <div class="sc-author">
+                                <img src="img/blog/comment/comment-1.jpg" alt="">
+                            </div>
+                            <div class="sc-text">
+                                <span>27 Aug 2019</span>
+                                <h5>Brandon Kelley</h5>
+                                <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et dolore
+                                    magnam.</p>
+                                <a href="#" class="comment-btn">Like</a>
+                                <a href="#" class="comment-btn">Reply</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-11 offset-lg-1">
+                                <div class="single-comment-item reply-comment">
+                                    <div class="sc-author">
+                                        <img src="img/blog/comment/comment-2.jpg" alt="">
+                                    </div>
+                                    <div class="sc-text">
+                                        <span>27 Aug 2019</span>
+                                        <h5>Mia Maya</h5>
+                                        <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet,
+                                            consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+                                            incidunt ut labore et dolore magnam.</p>
+                                        <a href="#" class="comment-btn like-btn">Like</a>
+                                        <a href="#" class="comment-btn reply-btn">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-comment-item second-comment ">
+                            <div class="sc-author">
+                                <img src="img/blog/comment/comment-3.jpg" alt="">
+                            </div>
+                            <div class="sc-text">
+                                <span>27 Aug 2019</span>
+                                <h5>Mike Phillips</h5>
+                                <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et dolore
+                                    magnam.</p>
+                                <a href="#" class="comment-btn">Like</a>
+                                <a href="#" class="comment-btn">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="leave-comment">
+                        <h4>Leave A Comment</h4>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Website">
+                            <textarea placeholder="Messages"></textarea>
+                            <button type="submit" class="site-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>You May Also Like</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-blog-item">
+                        <div class="sb-pic">
+                            <img src="img/blog/blog-details-also-1.jpg" alt="">
+                        </div>
+                        <div class="sb-text">
+                            <ul>
+                                <li><i class="fa fa-user"></i> Adam Smith</li>
+                                <li><i class="fa fa-clock-o"></i> 18th Jan, 2019</li>
+                            </ul>
+                            <h4><a href="#">Computer users and programmers have become so accustomed to using
+                                    Windows.</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-blog-item">
+                        <div class="sb-pic">
+                            <img src="img/blog/blog-details-also-2.jpg" alt="">
+                        </div>
+                        <div class="sb-text">
+                            <ul>
+                                <li><i class="fa fa-user"></i> Adam Smith</li>
+                                <li><i class="fa fa-clock-o"></i> 18th Jan, 2019</li>
+                            </ul>
+                            <h4><a href="#">After all, Sport England has awarded Birmingham the title National City of
+                                    Sport.</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Partner Carousel Section Begin -->
+    <div class="partner-section">
+        <div class="container">
+            <div class="partner-carousel owl-carousel">
+                <a href="#" class="partner-logo">
+                    <div class="partner-logo-tablecell">
+                        <img src="img/partner/partner-1.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="partner-logo">
+                    <div class="partner-logo-tablecell">
+                        <img src="img/partner/partner-2.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="partner-logo">
+                    <div class="partner-logo-tablecell">
+                        <img src="img/partner/partner-3.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="partner-logo">
+                    <div class="partner-logo-tablecell">
+                        <img src="img/partner/partner-4.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="partner-logo">
+                    <div class="partner-logo-tablecell">
+                        <img src="img/partner/partner-5.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Partner Carousel Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-logo">
+                            <div class="logo">
+                                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            </div>
+                            <p>Subscribe our newsletter gor get notification about new updates.</p>
+                            <form action="#" class="newslatter-form">
+                                <input type="text" placeholder="Enter your email...">
+                                <button type="submit"><i class="fa fa-location-arrow"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="footer-widget">
+                            <h4>Property City</h4>
+                            <ul>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">Florida</a></li>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">New York</a></li>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">Washington</a></li>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">Los Angeles</a></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">St Louis</a></li>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">Jacksonville</a></li>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">San Jose</a></li>
+                                <li><i class="fa fa-caret-right"></i> <a href="#">San Diego</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <h4>Social</h4>
+                            <ul class="social">
+                                <li><i class="ti-facebook"></i> <a href="#">Facebook</a></li>
+                                <li><i class="ti-instagram"></i> <a href="#">Instagram</a></li>
+                                <li><i class="ti-twitter-alt"></i> <a href="#">Twitter</a></li>
+                                <li><i class="ti-google"></i> <a href="#">Google+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <h4>Contact Us</h4>
+                            <ul class="contact-option">
+                                <li><i class="fa fa-map-marker"></i> 16 Creek Ave. Farming, NY</li>
+                                <li><i class="fa fa-phone"></i> (+88) 666 121 4321</li>
+                                <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
+                                <li><i class="fa fa-clock-o"></i> Mon - Sat, 08 AM - 06 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
