@@ -62,10 +62,14 @@ def guide_video_profile():
 def guide_time_profile():
     return render_template('guide/time_profile.html')
 
+@app.route("/guide/cal_profile", methods=['GET', 'POST'])
+def guide_cal_profile():
+    return render_template('guide/cal_profile.html')
+
 
 @app.route("/testf", methods=['GET', 'POST'])
 def guide_test():
-    return render_template('guide/test2.html')
+    return render_template('guide/test.html')
 
 
 

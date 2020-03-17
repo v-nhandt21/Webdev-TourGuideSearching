@@ -15,27 +15,66 @@
 
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/index3/css/style.css">
+    <link rel="stylesheet" href="../static/css/button.css">
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <body>
 
-    <div class="bradcam_area bradcam_bg_1">
+     
+    <div style="background-image: url(../static/index3/img/banner/bradcam.png);background-size: cover;
+    background-position: center;
+    padding: 40px 0 40px 0;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    background-size: cover;">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="bradcam_text">
-                        <h3>My Profile</h3>
-                    </div>
-                    <div class="job_content" >
-                        <br>
-                        <input style="color: yellow;" type="text" class="boxed-btn3" value="" placeholder="Enter your profile ID">
-                        <a class="boxed-btn3" href="#">NEW</a>
-                        <a class="boxed-btn3" href="#">EDIT</a>
-                        <br>
+            
+            <div class="row" >
+                <div >
+                    <h3 style="font-size: 50px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;" align="center">My Profile</h3>
+                </div>
+                <br>
+                <br>
+                <div align="center">
+                    
+                    <input class="c-checkbox" type="checkbox" id="checkbox1">
+                    <div class="c-formContainer" style="height: 4em;font-size: 1em;">
+                    <form class="c-form" action="" style="height: 4em;font-size: 1em;">
+                        <input class="c-form__input" placeholder="Choose a code" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+                        <label class="c-form__buttonLabel" for="checkbox1">
+                        <button class="c-form__button" type="button">Generate</button>
+                        </label>
+                        <label class="c-form__toggle" for="checkbox1" data-title="Create New" style="height: 4em;font-size: 1em;"></label>
+                    </form>
                     </div>
                 </div>
+                <br>
+                <br>
+                <div align="center">
+                    
+                    <input class="c-checkbox" type="checkbox" id="checkbox2">
+                    <div class="c-formContainer" style="height: 4em;font-size: 1em;">
+                    <form class="c-form" action="" style="height: 4em;font-size: 1em;">
+                        <input class="c-form__input" placeholder="Input code" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+                        <label class="c-form__buttonLabel" for="checkbox2">
+                        <button class="c-form__button" type="button">Load</button>
+                        </label>
+                        <label class="c-form__toggle" for="checkbox2" data-title="Edit Profile" style="height: 4em;font-size: 1em;"></label>
+                    </form>
+                    </div>
+                </div>
+                
+                    
+
+
+                
+
+                
             </div>
+            
         </div>
+        
     </div>
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -63,7 +102,7 @@
                             <li ><a href="build_profile"><span class="fa fa-user"></span>CV</a></li>
                             <li><a href="video_profile"><span class="fa fa-th"></span>Video</a></li>
                             <li class="active"><a href="time_profile"><span class="fa fa-clock-o"></span>Week</a></li>
-                            <li><a href="#"><span class="fa fa-credit-card"></span>Free</a></li>
+                            <li><a href="cal_profile"><span class="fa fa-credit-card"></span>Free</a></li>
                             <!--
         					<li><a href="#"><span class="fa fa-cog"></span> Preview</a></li>
         					<li><a href="#"><span class="fa fa-credit-card"></span> Who can access</a></li>
@@ -82,20 +121,20 @@
                             <h2>Pick your free time</h2>
                             <br>
                             <br>
-                            <div class="table-responsive">
-                            <table class="table" >
+                            <div class="table-responsive" >
+                            <table class="table" style="transform: scalex(0.8);" >
                             <thead style="padding-left: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(3, 145, 189); font-size: 12px;">
                                 <tr>
                                 <th>   Day</th>
                                 <th>Morning</th>
-                                <th>Afternoon</th>
+                                <th>Noon</th>
                                 <th>Evening</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                 <td class="button-group-area mt-10">
-                                    <a href="#" class="genric-btn primary-border circle">Monday</a>
+                                    <a href="#" class="genric-btn primary-border circle" style="font-size: 12px; ">Monday</a>
                                 </td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
@@ -103,7 +142,7 @@
                                 </tr>      
                                 <tr class="success">
                                     <td class="button-group-area mt-10">
-                                        <a href="#" class="genric-btn success-border circle">Tuesday</a>
+                                        <a href="#" class="genric-btn success-border circle" style="font-size: 12px; ">Tuesday</a>
 				
                                     </td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
@@ -112,7 +151,7 @@
                                 </tr>
                                 <tr class="danger">
                                     <td class="button-group-area mt-10">
-                                        <a href="#" class="genric-btn info-border circle">Wenesday</a>
+                                        <a href="#" class="genric-btn info-border circle"style="font-size: 12px; ">Wenesday</a>
 				
                                     </td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
@@ -121,7 +160,7 @@
                                 </tr>
                                 <tr class="info">
                                     <td class="button-group-area mt-10">
-                                        <a href="#" class="genric-btn warning-border circle">Thurday</a>
+                                        <a href="#" class="genric-btn warning-border circle"style="font-size: 12px; ">Thurday</a>
 				
                                     </td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
@@ -130,7 +169,7 @@
                                 </tr>
                                 <tr class="warning">
                                     <td class="button-group-area mt-10">
-                                        <a href="#" class="genric-btn danger-border circle">Friday</a>
+                                        <a href="#" class="genric-btn danger-border circle"style="font-size: 12px; ">Friday</a>
                                     </td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
@@ -138,7 +177,7 @@
                                 </tr>
                                 <tr class="active">
                                     <td class="button-group-area mt-10">
-                                        <a href="#" class="genric-btn success-border circle">Sarturday</a>
+                                        <a href="#" class="genric-btn success-border circle"style="font-size: 12px; ">Sarturday</a>
                                     </td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
                                 <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
@@ -146,7 +185,7 @@
                                 </tr>
                                 <tr>
                                     <td class="button-group-area mt-10">
-                                        <a href="#" class="genric-btn primary-border circle">Sunday</a>
+                                        <a href="#" class="genric-btn primary-border circle"style="font-size: 12px; ">Sunday</a>
                                     </td>
                                     <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>
                                     <td style="padding-top: 17px;"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="small"></td>

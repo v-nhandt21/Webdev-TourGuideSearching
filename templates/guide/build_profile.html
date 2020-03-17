@@ -12,36 +12,75 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/index3/css/style.css">
+    
+    
 
+    <link rel="stylesheet" href="../static/css/button.css">
     
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <body>
 
-    <div class="bradcam_area bradcam_bg_1">
+    
+    <div style="background-image: url(../static/index3/img/banner/bradcam.png);background-size: cover;
+    background-position: center;
+    padding: 40px 0 40px 0;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    background-size: cover;">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="bradcam_text">
-                        <h3>My Profile</h3>
-                    </div>
-                    <center>
-                    <div class="job_content" >
-                        <br>
-                        <input style="color: yellow;" type="text" class="boxed-btn3" value="" placeholder="Enter your profile ID">
-                        <a class="boxed-btn3" href="#">NEW</a>
-                        <a class="boxed-btn3" href="#">EDIT</a>
-                        <br>
-                    </div>
-                </center>
+            
+            <div class="row" >
+                <div >
+                    <h3 style="font-size: 50px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: aliceblue;" align="center">My Profile</h3>
                 </div>
+                <br>
+                <br>
+                <div align="center">
+                    
+                    <input class="c-checkbox" type="checkbox" id="checkbox1">
+                    <div class="c-formContainer" style="height: 4em;font-size: 1em;">
+                    <form class="c-form" action="" style="height: 4em;font-size: 1em;">
+                        <input class="c-form__input" placeholder="Choose a code" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+                        <label class="c-form__buttonLabel" for="checkbox1">
+                        <button class="c-form__button" type="button">Generate</button>
+                        </label>
+                        <label class="c-form__toggle" for="checkbox1" data-title="Create New" style="height: 4em;font-size: 1em;"></label>
+                    </form>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div align="center">
+                    
+                    <input class="c-checkbox" type="checkbox" id="checkbox2">
+                    <div class="c-formContainer" style="height: 4em;font-size: 1em;">
+                    <form class="c-form" action="" style="height: 4em;font-size: 1em;">
+                        <input class="c-form__input" placeholder="Input code" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+                        <label class="c-form__buttonLabel" for="checkbox2">
+                        <button class="c-form__button" type="button">Load</button>
+                        </label>
+                        <label class="c-form__toggle" for="checkbox2" data-title="Edit Profile" style="height: 4em;font-size: 1em;"></label>
+                    </form>
+                    </div>
+                </div>
+                
+                    
+
+
+                
+
+                
             </div>
+            
         </div>
+        
     </div>
+    
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="../static/index3/css/style.css">
 <div class="container">
     <div class="view-account">
         <section class="module">
@@ -67,7 +106,7 @@
                             <li class="active"><a href="build_profile"><span class="fa fa-user"></span>CV</a></li>
                             <li><a href="video_profile"><span class="fa fa-th"></span>Video</a></li>
                             <li><a href="time_profile"><span class="fa fa-clock-o"></span>Week</a></li>
-                            <li><a href="#"><span class="fa fa-credit-card"></span>Free</a></li>
+                            <li><a href="cal_profile"><span class="fa fa-credit-card"></span>Free</a></li>
                             <!--
         					<li><a href="#"><span class="fa fa-cog"></span> Preview</a></li>
         					<li><a href="#"><span class="fa fa-credit-card"></span> Who can access</a></li>
@@ -83,10 +122,12 @@
                         
                      
                     </h2>
+                    <!--
                     <div class="confirm-switch">
                         <input type="checkbox" id="confirm-switch" checked>
                         <label for="confirm-switch"></label>
                     </div>
+                    -->
                     
                     <form class="form-horizontal">
                         <fieldset class="fieldset">
@@ -95,30 +136,32 @@
                                 <figure class="figure col-md-2 col-sm-3 col-xs-12">
                                     <img class="img-rounded img-responsive" src="../static/image/guide_profile.png" alt="">
                                 </figure>
-                                <div class="form-inline col-md-10 col-sm-9 col-xs-12">
-                                    <input type="file" class="file-uploader pull-left">
-                                </div>
+                                
+                                <div class="upload-btn-wrapper">
+                                    <button class="btn">Upload a file</button>
+                                    <input type="file" name="myfile" />
+                                  </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Full Name</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Full Name</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="" placeholder="Rebecca">
+                                    <input type="text" class="form-control" value="" placeholder="Rebecca" >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Address</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Address</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value="" placeholder="123 Tran Hung Dao, 1 District, HCMC">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Age</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Age</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value="" placeholder="18">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Gender</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Gender</label>
                             
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value="" placeholder="Female">
@@ -128,39 +171,39 @@
                             
                         </fieldset>
                         <fieldset class="fieldset">
-                            <h3 class="fieldset-title">These Info are used for SEARCH your profile</h3>
+                            <h3 class="fieldset-title">Public Info</h3>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Working in</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Working in</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value=""placeholder="List of region, city: Mekong, Ho Chi Minh, Cu Chi....">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Language</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Language</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value=""placeholder="English, Chinese,...">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Biography</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Biography</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value=""placeholder="XIN CHAO (Good Morning Vietnam) Let's call me Chau(Joe). I have been working as a Tour Guide, ...">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">Email</label>
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label "style="color:  #00D363;">Email</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="email" class="form-control" value=""placeholder="Rebecca@website.com">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">Phone</label>
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Phone</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value=""placeholder="+84 375994743">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">Linkedin</label>
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Linkedin</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="url" class="form-control" value=""placeholder="https://www.linkedin.com/in/lorem">
                                     
@@ -168,22 +211,23 @@
                             </div>
                             <div class="form-group">
                                 
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">Upload CV</label>
-                                <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="file" class="file-uploader pull-left">
-                                    
-                                </div>
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Upload CV</label>
+                                <div class="upload-btn-wrapper" style="padding-left: 150px;">
+                                    <button class="btn">Upload a file</button>
+                                    <input type="file" name="myfile" />
+                                  </div>
                             </div>
                             <div class="form-group">
                                 
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label">Credentials</label>
-                                <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="file" class="file-uploader pull-left">
-                                    
-                                </div>
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Credentials</label>
+                                <div class="upload-btn-wrapper" style="padding-left: 150px;" >
+                                    <button class="btn">Upload a file</button>
+                                    <input type="file" name="myfile" />
+                                  </div>
                             </div>
                             
                         </fieldset>
+                        
                         <hr>
                         
                         <fieldset class="fieldset" align="center" style="align-items: center;">

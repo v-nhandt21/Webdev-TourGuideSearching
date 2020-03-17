@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/index3/css/style.css">
     <link rel="stylesheet" href="../static/css/button.css">
+    <link rel="stylesheet" href="../static/css/calender.css">
     <style></style>
 
 
@@ -102,9 +103,9 @@
             		<nav class="side-menu">
         				<ul class="nav">
                             <li ><a href="build_profile"><span class="fa fa-user"></span>CV</a></li>
-                            <li class="active"><a href="video_profile"><span class="fa fa-th"></span>Video</a></li>
+                            <li ><a href="video_profile"><span class="fa fa-th"></span>Video</a></li>
                             <li><a href="time_profile"><span class="fa fa-clock-o"></span>Week</a></li>
-                            <li><a href="cal_profile"><span class="fa fa-credit-card"></span>Free</a></li>
+                            <li class="active"><a href="cal_profile"><span class="fa fa-credit-card"></span>Free</a></li>
                             <!--
         					<li><a href="#"><span class="fa fa-cog"></span> Preview</a></li>
         					<li><a href="#"><span class="fa fa-credit-card"></span> Who can access</a></li>
@@ -130,8 +131,7 @@
                                 </div>
                             </div>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <center><iframe class="embed-responsive-item" align="center" width="560" height="315" src="https://www.youtube.com/embed/jgE3W8PSj2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </center>
+                                <div id="calendar" style="transform: scale(0.7);" align="center" class="embed-responsive-item" ></div>
                             </div>
                             
                         </fieldset>
@@ -152,6 +152,8 @@
 </div>
 
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="../static/js/calender.js"></script>
 
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
