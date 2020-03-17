@@ -1,9 +1,11 @@
 
-from flask import Flask, request, jsonify, render_template,json
+from flask import Flask, request, jsonify, render_template,json, abort
 from flask_sqlalchemy import SQLAlchemy
 import os
 from models import db
 from sqlalchemy import create_engine
+from calendar import Calendar
+from datetime import date
 app = Flask(__name__, static_url_path='/static')
 
 #app.config.from_object(os.environ['APP_SETTINGS'])
@@ -62,9 +64,31 @@ def guide_video_profile():
 def guide_time_profile():
     return render_template('guide/time_profile.html')
 
-@app.route("/guide/cal_profile", methods=['GET', 'POST'])
-def guide_cal_profile():
-    return render_template('guide/cal_profile.html')
+
+@app.route('/guide/cal_profile', defaults={'year': None})
+@app.route('/guide/cal_profile/<int:year>/')
+def guide_cal_profile(year):
+    start_month=0
+    cal = Calendar(0)
+    try:
+        if not year:
+            year = date.today().year
+        cal_list = [
+            cal.monthdatescalendar(year, i+1)
+            for i in range(12)
+        ]
+        print(len(cal_list))
+        for i in cal_list:
+            print(len(i))
+        print(cal_list[1][0])
+    except:
+        abort(404)
+    else:
+        return render_template('guide/cal_profile.html', year=year, cal=cal_list)
+    abort(404)
+    #Cac loi
+    #Khong chuyen sang nam moi duoc
+    #Hien thi Ngay thang truoc
 
 
 @app.route("/testf", methods=['GET', 'POST'])
