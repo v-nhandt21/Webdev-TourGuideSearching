@@ -56,9 +56,9 @@ def company_infor_detail():
 def guide_build_profile():
     return render_template('guide/build_profile.html')
 
-@app.route("/guide/video_profile", methods=['GET', 'POST'])
-def guide_video_profile():
-    return render_template('guide/video_profile.html')
+@app.route("/guide/job_profile", methods=['GET', 'POST'])
+def guide_job_profile():
+    return render_template('guide/job_profile.html')
 
 @app.route("/guide/time_profile", methods=['GET', 'POST'])
 def guide_time_profile():

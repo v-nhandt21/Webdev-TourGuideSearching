@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../static/index3/css/slicknav.css">
 
     <link rel="stylesheet" href="../static/index3/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/star.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -136,17 +137,17 @@
                                         <div class="single_field">
                                             <select class="wide">
                                                 <option data-display="Location">Location</option>
-                                                <option value="1">Rangpur</option>
-                                                <option value="2">Dhaka </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="single_field">
-                                            <select class="wide">
-                                                <option data-display="Category">Category</option>
-                                                <option value="1">Category 1</option>
-                                                <option value="2">Category 2 </option>
+                                                <option value="1">HoChiMinh</option>
+                                                <option value="2">Hanoi </option>
+                                                <option value="3">Hoian </option>
+                                                <option value="4">Mekong </option>
+                                                <option value="5">Danang </option>
+                                                <option value="6">Cuchi </option>
+                                                <option value="7">Halong </option>
+                                                <option value="8">Hue </option>
+                                                <option value="9">Sapa </option>
+                                                <option value="10">Phuquoc </option>
+                                                <option value="11">PhanThiet </option>
                                             </select>
                                         </div>
                                     </div>
@@ -154,26 +155,37 @@
                                         <div class="single_field">
                                             <select class="wide">
                                                 <option data-display="Experience">Experience</option>
-                                                <option value="1">Experience 1</option>
-                                                <option value="2">Experience 2 </option>
+                                                <option value="0">Fresher</option>
+                                                <option value="1">1 Year </option>
+                                                <option value="2">2 Year </option>
+                                                <option value="3">More than 2 Year </option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="single_field">
                                             <select class="wide">
-                                                <option data-display="Job type">Job type</option>
-                                                <option value="1">full time 1</option>
-                                                <option value="2">part time 2 </option>
+                                                <option data-display="Language">Language</option>
+                                              
+                                                <option value="1">English</option>
+                                                <option value="2">Russian</option>
+                                                <option value="3">Chinese</option>
+                                                <option value="4">Spanish</option>
+                                                <option value="5">Korean</option>
+                                                <option value="6">Japanese</option>
+                                                <option value="7">French</option>
+                                                <option value="8">Vietnamese</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="single_field">
                                             <select class="wide">
-                                                <option data-display="Qualification">Qualification</option>
-                                                <option value="1">Qualification 1</option>
-                                                <option value="2">Qualification 2</option>
+                                                <option data-display="Activity">Activity Level</option>
+                                                <option value="0">Sightseeing</option>
+                                                <option value="2">Food Serve</option>
+                                                <option value="3">Historical</option>
+                                                <option value="1">Exploration</option>
                                             </select>
                                         </div>
                                     </div>
@@ -181,8 +193,8 @@
                                         <div class="single_field">
                                             <select class="wide">
                                                 <option data-display="Gender">Gender</option>
-                                                <option value="1">male</option>
-                                                <option value="2">female</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
                                             </select>
                                         </div>
                                     </div>
@@ -190,7 +202,7 @@
                             </form>
                         </div>
                         <div class="range_wrap">
-                            <label for="amount">Price range:</label>
+                            <label for="amount">Price per hour estimate</label>
                             <div id="slider-range"></div>
                             <p>
                                 <input type="text" id="amount" readonly style="border:0; color:#7A838B; font-size: 14px; font-weight:400;">
@@ -206,15 +218,16 @@
                         <div class="recent_joblist white-bg ">
                             <div class="row align-items-center">
                                 <div class="col-md-6">
-                                    <h4>Job Listing</h4>
+                                    <h4>Collaborators </h4>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="serch_cat d-flex justify-content-end">
                                         <select>
-                                            <option data-display="Most Recent">Most Recent</option>
-                                            <option value="1">Marketer</option>
-                                            <option value="2">Wordpress </option>
-                                            <option value="4">Designer</option>
+                                            <option data-display="Most Active">Sorting </option>
+                                            <option value="1">Rating</option>
+                                            <option value="2">Review</option>
+                                            <option value="3">Nearest</option>
+                                            <option value="4">Most Active</option>
                                         </select>
                                     </div>
                                 </div>
@@ -224,23 +237,49 @@
 
                     <div class="job_lists m-0">
                         <div class="row">
-                            {{for }}
+                            {%for i in range(1,50)%}
+                            {% set mod = (loop.index/14)|int%}
+                            {% set guide = loop.index - mod*14 %}
+                            
                             <div class="col-lg-12 col-md-12">
                                 <div class="single_jobs white-bg d-flex justify-content-between">
                                     <div class="jobs_left d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="../static/index3/img/svg_icon/1.svg" alt="">
+                                        <div>
+                                            <img src="../static/avatar/{{guide}}.jpg" alt="" style=" background-repeat: no-repeat;
+                                            background-size: cover;
+                                        
+                                            overflow:hidden;
+                                            -webkit-border-radius:50px;
+                                            -moz-border-radius:50px;
+                                            border-radius:50px;
+                                            width:90px;
+                                            height:90px; padding-left: 1%;">
+                                        </div>
+                                        <div>
+                                            &nbsp;&nbsp;
                                         </div>
                                         <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4>Software Engineer</h4></a>
+                                            <a href="infor_detail"><h4 >Tracy Do</h4></a>
                                             <div class="links_locat d-flex align-items-center">
                                                 <div class="location">
                                                     <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
                                                 </div>
                                                 <div class="location">
-                                                    <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                                    <p> <i class="fa fa-clock-o"></i> Active</p>
                                                 </div>
                                             </div>
+                                            <div class="rate">
+                                                <input type="radio" id="star5{{guide}}" name="rate" value="5" />
+                                                <label for="star5{{guide}}" title="text">5 stars</label>
+                                                <input type="radio" id="star4{{guide}}" name="rate" value="4" />
+                                                <label for="star4{{guide}}" title="text">4 stars</label>
+                                                <input type="radio" id="star3{{guide}}" name="rate" value="3" />
+                                                <label for="star3{{guide}}" title="text">3 stars</label>
+                                                <input type="radio" id="star2{{guide}}" name="rate" value="2" />
+                                                <label for="star2{{guide}}" title="text">2 stars</label>
+                                                <input type="radio" id="star1{{guide}}" name="rate" value="1" />
+                                                <label for="star1{{guide}}" title="text">1 star</label>
+                                              </div>
                                         </div>
                                     </div>
                                     <div class="jobs_right">
@@ -249,170 +288,13 @@
                                             <a href="infor_detail" class="boxed-btn3">Contact Now</a>
                                         </div>
                                         <div class="date">
-                                            <p>Date line: 31 Jan 2020</p>
+                                            <p>Active: 31 Jan 2020</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="single_jobs white-bg d-flex justify-content-between">
-                                    <div class="jobs_left d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="../static/index3/img/svg_icon/2.svg" alt="">
-                                        </div>
-                                        <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4>Digital Marketer</h4></a>
-                                            <div class="links_locat d-flex align-items-center">
-                                                <div class="location">
-                                                    <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
-                                                </div>
-                                                <div class="location">
-                                                    <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jobs_right">
-                                        <div class="apply_now">
-                                            <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="infor_detail" class="boxed-btn3">Contact Now</a>
-                                        </div>
-                                        <div class="date">
-                                            <p>Date line: 31 Jan 2020</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="single_jobs white-bg d-flex justify-content-between">
-                                    <div class="jobs_left d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="../static/index3/img/svg_icon/3.svg" alt="">
-                                        </div>
-                                        <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4>Wordpress Developer</h4></a>
-                                            <div class="links_locat d-flex align-items-center">
-                                                <div class="location">
-                                                    <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
-                                                </div>
-                                                <div class="location">
-                                                    <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jobs_right">
-                                        <div class="apply_now">
-                                            <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="infor_detail" class="boxed-btn3">Contact Now</a>
-                                        </div>
-                                        <div class="date">
-                                            <p>Date line: 31 Jan 2020</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="single_jobs white-bg d-flex justify-content-between">
-                                    <div class="jobs_left d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="../static/index3/img/svg_icon/4.svg" alt="">
-                                        </div>
-                                        <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4>Visual Designer</h4></a>
-                                            
-                                            <div class="links_locat d-flex align-items-center">
-                                                <div class="location">
-                                                    <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
-                                                </div>
-                                                <div class="location">
-                                                    <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jobs_right">
-                                        <div class="apply_now">
-                                            <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="infor_detail" class="boxed-btn3">Contact Now</a>
-                                        </div>
-                                        <div class="date">
-                                            <p>Date line: 31 Jan 2020</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="single_jobs white-bg d-flex justify-content-between">
-                                    <div class="jobs_left d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="../static/index3/img/svg_icon/5.svg" alt="">
-                                        </div>
-                                        <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4>Software Engineer</h4></a>
-                                            <div class="links_locat d-flex align-items-center">
-                                                <div class="location">
-                                                    <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
-                                                </div>
-                                                <div class="location">
-                                                    <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jobs_right">
-                                        <div class="apply_now">
-                                            <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="infor_detail" class="boxed-btn3">Contact Now</a>
-                                        </div>
-                                        <div class="date">
-                                            <p>Date line: 31 Jan 2020</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="single_jobs white-bg d-flex justify-content-between">
-                                    <div class="jobs_left d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="../static/index3/img/svg_icon/1.svg" alt="">
-                                        </div>
-                                        <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4>Creative Designer</h4></a>
-                                            <div class="links_locat d-flex align-items-center">
-                                                <div class="location">
-                                                    <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
-                                                </div>
-                                                <div class="location">
-                                                    <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="jobs_right">
-                                        <div class="apply_now">
-                                            <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="infor_detail" class="boxed-btn3">Contact Now</a>
-                                        </div>
-                                        <div class="date">
-                                            <p>Date line: 31 Jan 2020</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="pagination_wrap">
-                                    <ul>
-                                        <li><a href="#"> <i class="ti-angle-left"></i> </a></li>
-                                        <li><a href="#"><span>01</span></a></li>
-                                        <li><a href="#"><span>02</span></a></li>
-                                        <li><a href="#"> <i class="ti-angle-right"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                            {% endfor %}
+                      
                     </div>
                 </div>
             </div>
@@ -461,9 +343,9 @@
         $( function() {
             $( "#slider-range" ).slider({
                 range: true,
-                min: 0,
-                max: 24600,
-                values: [ 750, 24600 ],
+                min: 1,
+                max: 100,
+                values: [ 1, 100 ],
                 slide: function( event, ui ) {
                     $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] +"/ Year" );
                 }

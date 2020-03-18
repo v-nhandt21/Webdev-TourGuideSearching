@@ -821,12 +821,12 @@ div.orbit-wrapper div.slider-nav { display: block; }
 
 div.orbit-wrapper div.slider-nav span { width: 39px; height: 50px; text-indent: -9999px; position: absolute; z-index: 30; top: 50%; margin-top: -25px; cursor: pointer; }
 
-div.orbit-wrapper div.slider-nav span.right { background: url('../images/right-arrow.png'); background-size: 100%; right: 0; }
+div.orbit-wrapper div.slider-nav span.right { background: url('../images/right-arrow.png'); background-size: 100%; right: 0;  }
 
 div.orbit-wrapper div.slider-nav span.left { background: url('../images/left-arrow.png'); background-size: 100%; left: 0; }
 
-.lt-ie9 div.orbit-wrapper div.slider-nav span.right { background: url('../images/right-arrow-small.png'); }
-.lt-ie9 div.orbit-wrapper div.slider-nav span.left { background: url('../images/left-arrow-small.png'); }
+.lt-ie9 div.orbit-wrapper div.slider-nav span.right { background: url('../images/right-arrow-small.png'); background-size: 70%; }
+.lt-ie9 div.orbit-wrapper div.slider-nav span.left { background: url('../images/left-arrow-small.png'); background-size: 70%;}
 
 /* Bullet Nav ---------------------- */
 ul.orbit-bullets { position: absolute; z-index: 30; list-style: none; bottom: -40px; left: 50%; margin-left: -50px; padding: 0; }

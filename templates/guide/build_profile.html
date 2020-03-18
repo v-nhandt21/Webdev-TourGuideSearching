@@ -90,11 +90,16 @@
                         <img class="img-profile img-circle img-responsive center-block" src="../static/image/guide_profile.png" alt="">
                         
                         <ul class="meta list list-unstyled">
+                            <li class="upload-btn-wrapper">
+                                <button class="btn">Upload a file</button>
+                                <input type="file" name="myfile" />
+                            </li>
                             <li class="name">Rebecca Sanders
                                 <label class="label label-info">UX Designer</label>
                             </li>
                             <li class="email"><a href="#">Rebecca.S@website.com</a></li>
                             <li class="activity">Last logged in: Today at 2:18pm</li>
+                            
                             
                         </ul>
                         
@@ -104,7 +109,7 @@
             		<nav class="side-menu">
         				<ul class="nav">
                             <li class="active"><a href="build_profile"><span class="fa fa-user"></span>CV</a></li>
-                            <li><a href="video_profile"><span class="fa fa-th"></span>Video</a></li>
+                            <li><a href="job_profile"><span class="fa fa-th"></span>Job</a></li>
                             <li><a href="time_profile"><span class="fa fa-clock-o"></span>Week</a></li>
                             <li><a href="cal_profile"><span class="fa fa-credit-card"></span>Free</a></li>
                             <!--
@@ -132,16 +137,7 @@
                     <form class="form-horizontal">
                         <fieldset class="fieldset">
                             <h3 class="fieldset-title">Personal Info</h3>
-                            <div class="form-group avatar">
-                                <figure class="figure col-md-2 col-sm-3 col-xs-12">
-                                    <img class="img-rounded img-responsive" src="../static/image/guide_profile.png" alt="">
-                                </figure>
-                                
-                                <div class="upload-btn-wrapper">
-                                    <button class="btn">Upload a file</button>
-                                    <input type="file" name="myfile" />
-                                  </div>
-                            </div>
+                            
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Full Name</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
@@ -185,6 +181,18 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Activity Level</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" class="form-control" value=""placeholder="Sightseeing, Food Serve, Historical, Exploration">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Experiment</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" class="form-control" value=""placeholder="Fresher,1 Year,...">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Biography</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
                                     <input type="text" class="form-control" value=""placeholder="XIN CHAO (Good Morning Vietnam) Let's call me Chau(Joe). I have been working as a Tour Guide, ...">
@@ -209,6 +217,7 @@
                                     
                                 </div>
                             </div>
+                            
                             <div class="form-group">
                                 
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Upload CV</label>
@@ -225,14 +234,36 @@
                                     <input type="file" name="myfile" />
                                   </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Price/Hour</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="url" class="form-control" value=""placeholder="5">
+                                    
+                                </div>
+                            </div>
                             
                         </fieldset>
+
+                        <fieldset class="fieldset">
+                            <div class="form-group">
+                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Video Introduce</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input type="text" class="form-control" value=""placeholder="https://www.youtube.com/embed/jgE3W8PSj2g">
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <center><iframe class="embed-responsive-item" align="center" width="560" height="315" src="https://www.youtube.com/embed/jgE3W8PSj2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </center>
+                            </div>
+                            
+                        </fieldset>
+                        
                         
                         <hr>
                         
                         <fieldset class="fieldset" align="center" style="align-items: center;">
                             <div class="button-group-area mt-40" >
-                                <input  class="genric-btn info circle" type="submit" value="Update Profile">
+                                <input  class="genric-btn info circle" type="submit" value="Save Profile">
                             </div>
                         </fieldset>
                             

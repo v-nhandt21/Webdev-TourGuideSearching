@@ -16,7 +16,10 @@
 
     #cal h1 {
         background-color: #fff;
-        padding: 3px;
+        padding: 1%;
+        opacity: 1;
+        color: green;
+        
     }
     
     </style>
@@ -24,7 +27,7 @@
     
     <meta name="viewport" content="width=device-width" />
     <title>flask-calendar</title>
-    <link rel="stylesheet" href="../static/index7/stylesheets/foundation.min.css">
+    <link rel="stylesheet" href="../static/index7/stylesheets/foundation.css">
     <script src="../static/index7/javascripts/modernizr.foundation.js"></script>
     <link href="../static/css/calender.css" rel="stylesheet">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle2.min.css" rel="stylesheet">
@@ -32,14 +35,20 @@
 </head>
 <input type="checkbox" checked data-toggle="toggle">
 
-<body style="background-color: rgb(32, 149, 245);">
+<body style="background-image: url(../static/index1/images/image_6.jpg);background-size: cover;
+background-position: center;
+padding: 40px 0 40px 0;
+background-repeat: no-repeat;
+position: relative;
+z-index: 0;
+background-size: cover;">
     <div class="row">
         <div class="twelve columns centered">
             <div id="cal" style="transform: scale(0.8);">
                 {% for month in cal %}
                 {% set current_month = loop.index %}
                 <div>
-                    <h1 style="background-color: rgb(32, 149, 245);" align="center" style="color: rgb(255, 241, 47);">{{ ['January', 'Febuary', 'March', 'April',
+                    <h1 style="" align="center" style="color: rgb(255, 241, 47);">{{ ['January', 'Febuary', 'March', 'April',
                             'May', 'June', 'July', 'August',
                             'September', 'October', 'November', 'December'][loop.index0] }} {{ year }}</h1>
                     <table>
@@ -48,34 +57,34 @@
                             {% for date in week %}
                                 {% if date.month != current_month %}
                                 <td class="current-month">
-                                    <div style=" color: rgb(0, 60, 255);font-size: 25px; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: italic;" align="center">{{ date.day }}</div>
+                                    <div style=" color: rgb(0, 60, 255);font-size: 150%; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: italic;" align="center">{{ date.day }}</div>
                                     <br>
                                 {% else %}
                                 <td class="past-month">
                                 
-                                <div style=" color: rgb(0, 60, 255);font-size: 25px; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: italic;" align="center">{{ date.day }}</div>
-                                <br>
-                                <div class="onaoffswitch">
-                                    <input type="checkbox" name="onaoffswitch" class="onaoffswitch-checkbox" id="1{{date.year}}{{date.month}}{{ date.day }}">
-                                    <label class="onaoffswitch-label" for="1{{date.year}}{{date.month}}{{ date.day }}">
-                                        <span class="onaoffswitch-inner"></span>
-                                        <span class="onaoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                                <div class="onboffswitch">
-                                    <input type="checkbox" name="onboffswitch" class="onboffswitch-checkbox" id="2{{date.year}}{{date.month}}{{ date.day }}">
-                                    <label class="onboffswitch-label" for="2{{date.year}}{{date.month}}{{ date.day }}">
-                                        <span class="onboffswitch-inner"></span>
-                                        <span class="onboffswitch-switch"></span>
-                                    </label>
-                                </div>
-                                <div class="onoffswitch">
-                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="3{{date.year}}{{date.month}}{{ date.day }}">
-                                    <label class="onoffswitch-label" for="3{{date.year}}{{date.month}}{{ date.day }}">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
+                                    <div style=" color: rgb(0, 60, 255);font-size: 150%; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: italic;" align="center">{{ date.day }}</div>
+                                    <br>
+                                    <div class="onaoffswitch">
+                                        <input type="checkbox" name="onaoffswitch" class="onaoffswitch-checkbox" id="1{{date.year}}{{date.month}}{{ date.day }}">
+                                        <label class="onaoffswitch-label" for="1{{date.year}}{{date.month}}{{ date.day }}">
+                                            <span class="onaoffswitch-inner"></span>
+                                            <span class="onaoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onboffswitch">
+                                        <input type="checkbox" name="onboffswitch" class="onboffswitch-checkbox" id="2{{date.year}}{{date.month}}{{ date.day }}">
+                                        <label class="onboffswitch-label" for="2{{date.year}}{{date.month}}{{ date.day }}">
+                                            <span class="onboffswitch-inner"></span>
+                                            <span class="onboffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="3{{date.year}}{{date.month}}{{ date.day }}">
+                                        <label class="onoffswitch-label" for="3{{date.year}}{{date.month}}{{ date.day }}">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
                                 {% endif %}
                                 </td>
                             {% endfor %}
@@ -87,7 +96,7 @@
             </div>
         </div>
     </div>
-    <script src="../static/index7/javascripts/foundation.min.js"></script>
+    <script src="../static/index7/javascripts/foundation.js"></script>
     <script src="../static/index7/javascripts/app.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle2.min.js"></script>
     <script type="text/javascript">

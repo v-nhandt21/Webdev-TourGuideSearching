@@ -1,5 +1,5 @@
 .onaoffswitch {
-    position: relative; width: 93px;
+    position: relative; width: 80%;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onaoffswitch-checkbox {
@@ -7,18 +7,22 @@
 }
 .onaoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
-    height: 10px; padding: 0; line-height: 10px;
-    border: 2px solid #EEEEEE; border-radius: 10px;
+    
+    position: relative;
+    height: 0;
+    padding-bottom: 15%;
+
+    border: 5% solid #EEEEEE; border-radius: 10px;
     background-color: #EEEEEE;
     transition: background-color 0.3s ease-in;
 }
 .onaoffswitch-label:before {
     content: "";
-    display: block; width: 10px; margin: 0px;
+    display: block; width: 10%; margin: 0px;
     background: #04B344;
     position: absolute; top: 0; bottom: 0;
-    right: 83px;
-    border: 2px solid #00AB44; border-radius: 10px;
+    width: 20%;
+    border: 5% solid #00AB44; border-radius: 10px;
     transition: all 0.3s ease-in 0s; 
 }
 .onaoffswitch-checkbox:checked + .onaoffswitch-label {
@@ -38,7 +42,7 @@
 
 
 .onboffswitch {
-    position: relative; width: 93px;
+    position: relative; width: 80%;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onboffswitch-checkbox {
@@ -46,18 +50,22 @@
 }
 .onboffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
-    height: 10px; padding: 0; line-height: 10px;
-    border: 2px solid #EEEEEE; border-radius: 10px;
+   
+    position: relative;
+    height: 0;
+    padding-bottom: 15%;
+
+    border: 5% solid #EEEEEE; border-radius: 10px;
     background-color: #EEEEEE;
     transition: background-color 0.3s ease-in;
 }
 .onboffswitch-label:before {
     content: "";
-    display: block; width: 10px; margin: 0px;
+    display: block; width: 10%; margin: 0px;
     background: #FFE100;
     position: absolute; top: 0; bottom: 0;
-    right: 83px;
-    border: 2px solid #EEEEEE; border-radius: 10px;
+    width: 20%;
+    border: 5% solid #EEEEEE; border-radius: 10px;
     transition: all 0.3s ease-in 0s; 
 }
 .onboffswitch-checkbox:checked + .onboffswitch-label {
@@ -74,7 +82,7 @@
 
 
 .onoffswitch {
-    position: relative; width: 93px;
+    position: relative; width: 80%;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
@@ -82,18 +90,23 @@
 }
 .onoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
-    height: 10px; padding: 0; line-height: 10px;
-    border: 2px solid #EEEEEE; border-radius: 10px;
+    
+
+    position: relative;
+    height: 0;
+    padding-bottom: 15%;
+
+    border: 5% solid #EEEEEE; border-radius: 10px;
     background-color: #EEEEEE;
     transition: background-color 0.3s ease-in;
 }
 .onoffswitch-label:before {
     content: "";
-    display: block; width: 10px; margin: 0px;
+    display: block; width: 10%; margin: 0px;
     background: #FF0000;
     position: absolute; top: 0; bottom: 0;
-    right: 83px;
-    border: 2px solid #00AB44; border-radius: 10px;
+    width: 20%;
+    border: 5% solid #00AB44; border-radius: 10px;
     transition: all 0.3s ease-in 0s; 
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label {
