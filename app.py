@@ -20,7 +20,7 @@ POSTGRES = {
     'port': '4600',
 }
 
-DEV=1
+DEV=0
 if DEV == 0:
     app.config['DEVELOPMENT'] = False
     app.config['DEBUG'] = False

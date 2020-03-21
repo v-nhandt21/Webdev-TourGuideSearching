@@ -23,6 +23,22 @@
     }
     
     </style>
+    <style>
+        .buttonsub {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 2%;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .button5sub {border-radius: 20%;}
+        </style>
     <meta charset="utf-8" />
     
     <meta name="viewport" content="width=device-width" />
@@ -45,6 +61,7 @@ background-size: cover;">
     <div class="row">
         <div class="twelve columns centered">
             <form method="POST">
+                
             <div id="cal" style="transform: scale(0.8);">
                 {% for month in cal %}
                 {% set current_month = loop.index %}
@@ -66,21 +83,21 @@ background-size: cover;">
                                     <div style=" color: rgb(0, 60, 255);font-size: 150%; font-weight: 600; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: italic;" align="center">{{ date.day }}</div>
                                     <br>
                                     <div class="onaoffswitch">
-                                        <input type="checkbox" name="onaoffswitch" class="onaoffswitch-checkbox" id="1{{date.year}}{{date.month}}{{ date.day }}">
+                                        <input type="checkbox" name="date_1{{date.year}}{{date.month}}{{ date.day }}" class="onaoffswitch-checkbox" id="1{{date.year}}{{date.month}}{{ date.day }}">
                                         <label class="onaoffswitch-label" for="1{{date.year}}{{date.month}}{{ date.day }}">
                                             <span class="onaoffswitch-inner"></span>
                                             <span class="onaoffswitch-switch"></span>
                                         </label>
                                     </div>
                                     <div class="onboffswitch">
-                                        <input type="checkbox" name="onboffswitch" class="onboffswitch-checkbox" id="2{{date.year}}{{date.month}}{{ date.day }}">
+                                        <input type="checkbox" name="date_2{{date.year}}{{date.month}}{{ date.day }}" class="onboffswitch-checkbox" id="2{{date.year}}{{date.month}}{{ date.day }}">
                                         <label class="onboffswitch-label" for="2{{date.year}}{{date.month}}{{ date.day }}">
                                             <span class="onboffswitch-inner"></span>
                                             <span class="onboffswitch-switch"></span>
                                         </label>
                                     </div>
                                     <div class="onoffswitch">
-                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="3{{date.year}}{{date.month}}{{ date.day }}">
+                                        <input type="checkbox" name="date_3{{date.year}}{{date.month}}{{ date.day }}" class="onoffswitch-checkbox" id="3{{date.year}}{{date.month}}{{ date.day }}">
                                         <label class="onoffswitch-label" for="3{{date.year}}{{date.month}}{{ date.day }}">
                                             <span class="onoffswitch-inner"></span>
                                             <span class="onoffswitch-switch"></span>
