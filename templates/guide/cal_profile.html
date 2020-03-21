@@ -44,6 +44,7 @@ z-index: 0;
 background-size: cover;">
     <div class="row">
         <div class="twelve columns centered">
+            <form method="POST">
             <div id="cal" style="transform: scale(0.8);">
                 {% for month in cal %}
                 {% set current_month = loop.index %}
@@ -94,6 +95,7 @@ background-size: cover;">
                 </div>
                 {% endfor %}
             </div>
+        </form>
         </div>
     </div>
     <script src="../static/index7/javascripts/foundation.js"></script>

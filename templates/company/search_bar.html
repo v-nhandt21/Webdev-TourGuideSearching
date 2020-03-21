@@ -9,7 +9,7 @@
   </head>
   <body>
         <div class="s012">
-        <form>
+        <form method="POST" action="list_search"> 
             <fieldset>
             <legend>Search Collaborators</legend>
             </fieldset>
@@ -71,7 +71,20 @@
                     </div>
                     <div class="input-field">
                     <label>WORKING PLACES</label>
-                    <input type="text" placeholder="Region, city, ..." />
+                    <select data-trigger="" name="location">
+                        <option value="All">All</option>
+                        <option value="HoChiMinh">Ho Chi Minh</option>
+                        <option value="Hoian">Hoi An</option>   
+                        <option value="Danang">Da Nang</option>
+                        <option value="Hanoi">Ha Noi</option>
+                        <option value="Hue">Hue</option>
+                        <option value="Sapa">Sapa</option>
+                        <option value="Phuquoc">Phu Quoc</option>
+                        <option value="Halong">Ha Long</option>
+                        <option value="Phanthiet">Phan Thiet</option>
+                        <option value="Mekong">Me Kong</option>
+                        <option value="Cuchi">Cu Chi</option>
+                        </select>
                     </div>
                 </div>
                 </div>
@@ -87,7 +100,7 @@
                     </div>
                     <div class="input-field">
                         <label>TOUR START</label>
-                        <input class="datepicker" type="text" placeholder="mm/dd/yy" />
+                        <input class="datepicker" type="text" placeholder="mm/dd/yy"  name="calender"/>
                     </div>
                     </div>
 
@@ -113,11 +126,12 @@
                         <div class="input-field">
                             <label>ACTIVITY LEVEL</label>
                             <div class="input-select">
-                            <select data-trigger="" name="choices-single-defaul">
-                            <option placeholder="">Sight Seeing</option>
-                            <option>Food Serve</option>
-                            <option>Exploration</option>
-                            <option>Historical</option>
+                            <select data-trigger="" name="act_level">
+                            <option value="All">All</option>
+                            <option value="Sightseeing" placeholder="">Sight Seeing</option>
+                            <option value="Foodserve">Food Serve</option>
+                            <option value="Exploration">Exploration</option>
+                            <option value="Historical">Historical</option>
                             </select>
                         </div>
                     </div>
@@ -134,16 +148,16 @@
                         <div class="input-field">
                             <label>Languague</label>
                             <div class="input-select">
-                            <select data-trigger="" name="choices-single-defaul">
-                            <option placeholder="">English</option>
-                            <option>English</option>
-                            <option>Russian</option>
-                            <option>Chinese</option>
-                            <option>Spanish</option>
-                            <option>Korean</option>
-                            <option>Japanese</option>
-                            <option>French</option>
-                            <option>Vietnamese</option>
+                            <select data-trigger="" name="language">
+                            <option value="All">All</option>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="French">French</option>
+                            <option value="Vietnamese">Vietnamese</option>
                             </select>
                         </div>
                     </div>
@@ -157,25 +171,25 @@
                 <div class="row third">
                 <div class="input-checkbox-group">
                     <div class="input-checkbox">
-                    <input id="yes" type="checkbox" name="customer" value="yes" checked="checked" />
-                    <label for="yes">MORNING</label>
+                    <input id="free1" type="checkbox" name="free1" value="yes" />
+                    <label for="free1">MORNING</label>
                     </div>
                     <div class="input-checkbox">
-                    <input id="no" type="checkbox" name="customer" value="no" />
-                    <label for="no">AFTERNOON</label>
+                    <input id="free2" type="checkbox" name="free2" value="yes" />
+                    <label for="free2">AFTERNOON</label>
                     </div>
                     <div class="input-checkbox">
-                        <input id="no" type="checkbox" name="customer" value="no" />
-                        <label for="no">EVERNING</label>
+                        <input id="free3" type="checkbox" name="free3" value="yes" />
+                        <label for="free3">EVERNING</label>
                     </div>
                     <div class="input-checkbox">
-                        <input id="no" type="checkbox" name="customer" value="no" />
-                        <label for="no">FULL DAY</label>
+                        <input id="free" type="checkbox" name="free" value="yes" checked="checked" />
+                        <label for="free">FULL DAY</label>
                     </div>
                 </div>
                 </div>
                 <form class="row last">
-                    <input class="btn-search" type="button" onclick="window.location.href = 'list_search';" value="Search"/>
+                    <input class="btn-search" type="submit" value="Search" name="search"/>
                 </form>
                 
                 

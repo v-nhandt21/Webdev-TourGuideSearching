@@ -95,23 +95,22 @@
 <link rel="stylesheet" href="../static/index3/css/style.css">
 {% if sample_profile == False %}
 <div class="container">
-    <form class="form-horizontal" method="POST" enctype="multipart/form-data">
     <div class="view-account">
         <section class="module">
             <div class="module-inner">
                 <div class="side-bar">
                     <div class="user-info">
-                        <img class="img-profile img-circle img-responsive center-block" src="{{guide.avatar}}" alt="">
+                        <img class="img-profile img-circle img-responsive center-block" src="../static/image/guide_profile.png" alt="">
                         
                         <ul class="meta list list-unstyled">
                             <li class="upload-btn-wrapper">
                                 <button class="btn">Upload a file</button>
-                                <input type="file" name="avatar" />
+                                <input type="file" name="myfile" />
                             </li>
-                            <li class="name">{{guide.name}}
-                                <label class="label label-info">{{guide.location}}</label>
+                            <li class="name">Rebecca Sanders
+                                <label class="label label-info">UX Designer</label>
                             </li>
-                            <li class="email"><a href="#">{{guide.email}}</a></li>
+                            <li class="email"><a href="#">Rebecca.S@website.com</a></li>
                             <li class="activity">Last logged in: Today at 2:18pm</li>
                             
                             
@@ -147,14 +146,14 @@
                     </div>
                     -->
                     
-                    
+                    <form class="form-horizontal" method="POST"></form>
                         <fieldset class="fieldset">
                             <h3 class="fieldset-title">Personal Info</h3>
                             
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Full Name</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.name}}" placeholder="" name="name">
+                                    <input type="text" class="form-control" value="{{guide.name}}" placeholder="Rebecca" name="name">
                                 </div>
                             </div>
                     
@@ -162,20 +161,20 @@
                                 
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Address</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.address}}" placeholder="" name="address">
+                                    <input type="text" class="form-control" value="{{guide.address}}" placeholder="123 Tran Hung Dao, 1 District, HCMC" name="address">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Age</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.age}}" placeholder="" name="age">
+                                    <input type="text" class="form-control" value="{{guide.age}}" placeholder="18" name="age">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Gender</label>
                             
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.gender}}" placeholder="" name="gender">
+                                    <input type="text" class="form-control" value="{{guide.gender}}" placeholder="Female" name="gender">
                                 </div>
                             </div>
         
@@ -186,84 +185,49 @@
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Working in</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select data-trigger="" name="location" class="form-control">
-                                        <option data-display="Location"></option>
-                                        <option value="HoChiMinh">Ho Chi Minh</option>
-                                        <option value="Hoian">Hoi An</option>   
-                                        <option value="Danang">Da Nang</option>
-                                        <option value="Hanoi">Ha Noi</option>
-                                        <option value="Hue">Hue</option>
-                                        <option value="Sapa">Sapa</option>
-                                        <option value="Phuquoc">Phu Quoc</option>
-                                        <option value="Halong">Ha Long</option>
-                                        <option value="Phanthiet">Phan Thiet</option>
-                                        <option value="Mekong">Me Kong</option>
-                                        <option value="Cuchi">Cu Chi</option>
-                                    </select>
+                                    <input type="text" class="form-control" value="{{guide.location}}"placeholder="List of region, city: Mekong, Ho Chi Minh, Cu Chi...." name="location">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Language</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select data-trigger="" name="language" class="form-control"> 
-                                        <option data-display="Language"></option>
-                                        <option value="English">English</option>
-                                        <option value="Russian">Russian</option>
-                                        <option value="Chinese">Chinese</option>
-                                        <option value="Spanish">Spanish</option>
-                                        <option value="Korean">Korean</option>
-                                        <option value="Japanese">Japanese</option>
-                                        <option value="French">French</option>
-                                        <option value="Vietnamese">Vietnamese</option>
-                                        </select>
-                                    
+                                    <input type="text" class="form-control" value="{{guide.language}}"placeholder="English, Chinese,..." name="language">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Activity Level</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select data-trigger="" name="act_level" class="form-control">
-                                        <option data-display="Activity"></option>
-                                        <option value="Sightseeing" placeholder="">Sight Seeing</option>
-                                        <option value="Foodserve">Food Serve</option>
-                                        <option value="Exploration">Exploration</option>
-                                        <option value="Historical">Historical</option>
-                                        </select>
-                                    </div>
+                                    <input type="text" class="form-control" value="{{guide.act_level}}"placeholder="Sightseeing, Food Serve, Historical, Exploration" name="act_level">
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Experiment</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select data-trigger="" name="exp" class="form-control">
-                                        <option data-display="Experiment"></option>
-                                        <option value="student">Student</option>
-                                        <option value="fresher">Fresher</option>
-                                        <option value="1year">One Year</option>
-                                        <option value="2year">Two Year</option>
-                                        </select></div>
+                                    <input type="text" class="form-control" value="{{guide.exp}}"placeholder="Fresher,1 Year,..." name="exp">
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2 col-sm-3 col-xs-12 control-label" style="color:  #00D363;">Biography</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.bio}}"placeholder="" name="bio">
+                                    <input type="text" class="form-control" value="{{guide.bio}}"placeholder="XIN CHAO (Good Morning Vietnam) Let's call me Chau(Joe). I have been working as a Tour Guide, ..." name="bio">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label "style="color:  #00D363;">Email</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="email" class="form-control" value="{{guide.email}}"placeholder="" name="email">
+                                    <input type="email" class="form-control" value="{{guide.email}}"placeholder="Rebecca@website.com" name="email">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Phone</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.phone}}"placeholder="" name="phone">
+                                    <input type="text" class="form-control" value="{{guide.phone}}"placeholder="+84 375994743" name="phone">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Linkedin</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="url" class="form-control" value="{{guide.linkin}}"placeholder="" name="linkin">
+                                    <input type="url" class="form-control" value="{{guide.linkin}}"placeholder="https://www.linkedin.com/in/lorem" name="linkin">
                                     
                                 </div>
                             </div>
@@ -271,45 +235,34 @@
                             <div class="form-group">
                                 
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Upload CV</label>
-                                
+                                <!--{% if guide.cvlink == "" %} -->
                                 <div class="upload-btn-wrapper" style="padding-left: 150px;">
                                     <button class="btn">Upload PDF</button>
-                                    <span style="color: rgb(0, 110, 255); font-weight: 700;font-size: smaller;">Save to load file</span>
+                                    <!--<span style="color: rgb(0, 110, 255); font-weight: 700;font-size: smaller;">Save to load file</span>-->
                                     <input type="file" name="cvlink" />
                                 </div>
-                                
-                                {% if guide.cvlink != "" %}
-                                <br>
-                                <br>
-                                <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;"></label>
-                                <div class="col-md-10 col-sm-9 col-xs-12"><embed align="center" src="{{guide.cvlink}}#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="425px" />
-                                </div>
+                                <!--
+                                {% else %}
+                                <iframe src="{{guide.cvlink}}" width="100%" height="500px">
+                                </iframe>
                                 {% endif %}
-                                
+                                -->
                             </div>
                             
 
                             <div class="form-group">
                                 
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Credentials</label>
-                                
                                 <div class="upload-btn-wrapper" style="padding-left: 150px;" >
                                     <button class="btn">Upload PDF</button>
-                                    <span style="color: rgb(0, 110, 255); font-weight: 700;font-size: smaller;">Save to load file</span>
+                                    <!--<span style="color: rgb(0, 110, 255); font-weight: 700;font-size: smaller;">Save to load file</span> -->
                                     <input type="file" name="cred" />
                                   </div>
-                                  {% if guide.cred != "" %}
-                                  <br>
-                                    <br>
-                                    <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;"></label>
-                                    <div class="col-md-10 col-sm-9 col-xs-12"><embed align="center" src="{{guide.cred}}#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="425px" />
-                                    </div>
-                                {% endif %}
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label"style="color:  #00D363;">Price/Hour</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" class="form-control" value="{{guide.price_hour}}"placeholder="" name="price_hour">
+                                    <input type="text" class="form-control" value="{{guide.price_hour}}"placeholder="5" name="price_hour">
                                     
                                 </div>
                             </div>
@@ -324,8 +277,7 @@
                                 </div>
                             </div>
                             <div class="embed-responsive embed-responsive-16by9">
-
-                                <center><iframe class="embed-responsive-item" align="center" width="560" height="315" src="https://www.youtube.com/embed/jgE3W8PSj2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <center><iframe class="embed-responsive-item" align="center" width="560" height="315" src="{{guide.videolink}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </center>
                             </div>
                             
@@ -341,12 +293,11 @@
                         </fieldset>
                         <input type="hidden" name="virtual_get_id" value="{{guide.id}}">
                         
-                    
+                    </form>
                 </div>
             </div>
         </section>
     </div>
-</form>
 </div>
 {% endif %}
 
@@ -355,8 +306,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-
-</script>
+	
 </script>
 </body>
 </html>

@@ -25,6 +25,39 @@
     <link rel="stylesheet" href="../static/index3/css/slicknav.css">
 
     <link rel="stylesheet" href="../static/index3/css/style.css">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -33,15 +66,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-
+    {% if demo == True %}
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>Software Engineer</h3>
-                        
+                        <h3>Guide Detail Information</h3>
                     </div>
                     
                 </div>
@@ -61,7 +93,7 @@
                                     <img src="../static/index3/img/svg_icon/1.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
-                                    <a href="#"><h4>Software Engineer</h4></a>
+                                    <a href="#"><h4>Phan Thi Ngoc Huyen</h4></a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -176,6 +208,202 @@
             </div>
         </div>
     </div>
+    {% else %}
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Guide Detail Information</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+    
+    <div class="job_details_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="job_details_header">
+                        <div class="single_jobs white-bg d-flex justify-content-between">
+                            <div class="jobs_left d-flex align-items-center">
+                                <div >
+                                    <img src="{{guide.avatar}}" alt="" style=" background-repeat: no-repeat;
+                                            background-size: cover;
+                                        
+                                            overflow:hidden;
+                                            -webkit-border-radius:50px;
+                                            -moz-border-radius:50px;
+                                            border-radius:50px;
+                                            width:90px;
+                                            height:90px; padding-left: 1%;">
+                                </div>
+                                <div class="jobs_conetent">
+                                    <a href="#"><h4 style="color: rgb(30, 207, 39); font-weight: bold;">&nbsp;&nbsp;{{guide.name}}</h4></a>
+                                    <div class="links_locat d-flex align-items-center">
+                                        &nbsp;&nbsp;
+                                        <div class="location">
+                                            <p> <i class="fa fa-map-marker"></i>{{guide.location}}</p>
+                                        </div>
+                                        <div class="location">
+                                            <p> <i class="fa fa-clock-o"></i>&nbsp; Active</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="jobs_right">
+                                <div class="apply_now">
+                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descript_wrap white-bg">
+                        <div class="single_wrap">
+                            <h4 style="color: rgb(30, 207, 39); font-weight:700;">Bio</h4>
+                            <p>{{guide.bio}}</p>
+                        </div>
+                        
+                        
+                        <div class="single_wrap">
+                            <h4 style="color: rgb(30, 207, 39); font-weight:700;">CV</h4>
+                            {% if guide.cvlink =="" %}
+                            <h4 style="font-weight: 700; font-size: smaller;color: brown;">CV is still not updated</h4>
+                            {% else %}
+                            <div ><embed align="center" src="{{guide.cvlink}}" width="100%" height="425px" />
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="single_wrap">
+                            <h4 style="color: rgb(30, 207, 39); font-weight:700;">Credential</h4>
+                            {% if guide.cred =="" %}
+                            <h4 style="font-weight: 700; font-size: smaller;color: brown;">Credential is still not uploaded</h4>
+                            {% else %}
+                            <div ><embed align="center" src="{{guide.cred}}" width="100%" height="425px" />
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="single_wrap">
+                            <div class="embed-responsive embed-responsive-16by9">
+
+                                <center><iframe class="embed-responsive-item" align="center" width="560" height="315" src="https://www.youtube.com/embed/jgE3W8PSj2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="column">
+                            <img src="../static/index1/images/gallery-1.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-2.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-3.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-4.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-5.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-6.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-7.jpg" style="width:100%">
+                            </div>
+                            <div class="column">
+                            <img src="../static/index1/images/gallery-8.jpg" style="width:100%">
+                            <img src="../static/index1/images/gallery-9.jpg" style="width:100%">
+                            <img src="../static/index1/images/image_1.jpg" style="width:100%">
+                            <img src="../static/index1/images/image_2.jpg" style="width:100%">
+                            <img src="../static/index1/images/image_3.jpg" style="width:100%">
+                            <img src="../static/index1/images/image_4.jpg" style="width:100%">
+                            </div>  
+                            <div class="column">
+                            <img src="../static/index1/images/image_5.jpg" style="width:100%">
+                            <img src="../static/index1/images/image_6.jpg" style="width:100%">
+                            <img src="../static/index1/images/seasonal-1.jpg" style="width:100%">
+                            <img src="../static/index1/images/seasonal-2.jpg" style="width:100%">
+                            <img src="../static/index1/images/seasonal-3.jpg" style="width:100%">
+                            <img src="../static/index1/images/seasonal-4.jpg" style="width:100%">
+                            <img src="../static/index1/images/seasonal-6.jpg" style="width:100%">
+                            </div>
+                            
+                          </div>
+                        
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="job_sumary">
+                        <div class="summery_header">
+                            <h3>Persional</h3>
+                        </div>
+                        <div class="job_content">
+                            <ul>
+                                
+                                <li>Activity Level: <span style="color: rgb(30, 207, 39);">{{guide.act_level}}</span></li>
+                                <li>Address: <span style="color: rgb(30, 207, 39);">{{guide.address}}</span></li>
+                                <li>Age: <span style="color: rgb(30, 207, 39);">{{guide.age}}</span></li>
+                                <li>Gender: <span style="color: rgb(30, 207, 39);">{{guide.gender}}</span></li>
+                                <li>Email: <span style="color: rgb(30, 207, 39);"> {{guide.email}}</span></li>
+                                <li>Experience: <span style="color: rgb(30, 207, 39);"> {{guide.exp}}</span></li>
+                                <li>Phone: <span style="color: rgb(30, 207, 39);"> {{guide.phone}}</span></li>
+                                <li>Language: <span style="color: rgb(30, 207, 39);"> {{guide.language}}</span></li>
+                                <li>Linkin: <span style="color: rgb(30, 207, 39);"> {{guide.linkin}}</span></li>
+                                <li>Price/Hour: <span style="color: rgb(30, 207, 39);"> {{guide.price_hour}}</span></li>
+                                <li>Location: <span style="color: rgb(30, 207, 39);"> {{guide.location}}</span></li>
+                                <li>Rating: <span style="color: rgb(30, 207, 39);"> {{guide.rating}}</span></li>
+                            </ul>
+                        </div>
+                        <div class="job_content">
+                            <br>
+                            <a class="boxed-btn3" href="#">CALL</a>
+                            <a class="boxed-btn3" href="#">BACK</a>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="share_wrap d-flex">
+                        <span>Contact at:</span>
+                        <ul>
+                            <li><a href="{{guide.linkin}}"> <i class="fa fa-facebook"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-google-plus"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-twitter"></i></a> </li>
+                            <li><a href="{{guide.email}}"> <i class="fa fa-envelope"></i></a> </li>
+                        </ul>
+                    </div>
+                    <div class="job_location_wrap">
+                        <div class="job_lok_inner">
+                            <div id="map" style="height: 200px;"></div>
+                            <script>
+                            function initMap() {
+                                var uluru = {lat: -25.363, lng: 131.044};
+                                var grayStyles = [
+                                {
+                                    featureType: "all",
+                                    stylers: [
+                                    { saturation: -90 },
+                                    { lightness: 50 }
+                                    ]
+                                },
+                                {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
+                                ];
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                center: {lat: -31.197, lng: 150.744},
+                                zoom: 9,
+                                styles: grayStyles,
+                                scrollwheel:  false
+                                });
+                            }
+                            
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 
 
 

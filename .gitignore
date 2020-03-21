@@ -23,3 +23,5 @@ htmlcov/
 .coverage.*
 *,cover
 Resource/
+static/cv
+static/cred

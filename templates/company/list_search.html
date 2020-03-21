@@ -126,7 +126,7 @@
                     <div class="job_filter white-bg">
                         <div class="form_inner white-bg">
                             <h3>Filter</h3>
-                            <form action="#">
+                            <form method="POST">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="single_field">
@@ -134,83 +134,85 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <div class="single_field">
-                                            <select class="wide">
-                                                <option data-display="Location">Location</option>
-                                                <option value="1">HoChiMinh</option>
-                                                <option value="2">Hanoi </option>
-                                                <option value="3">Hoian </option>
-                                                <option value="4">Mekong </option>
-                                                <option value="5">Danang </option>
-                                                <option value="6">Cuchi </option>
-                                                <option value="7">Halong </option>
-                                                <option value="8">Hue </option>
-                                                <option value="9">Sapa </option>
-                                                <option value="10">Phuquoc </option>
-                                                <option value="11">PhanThiet </option>
+                                        <div class="single_field" >
+                                            <select class="wide" name="location">
+                                            
+                                                    <option data-display="Working place"></option>
+                                                    <option value="HoChiMinh">Ho Chi Minh</option>
+                                                    <option value="Hoian">Hoi An</option>   
+                                                    <option value="Danang">Da Nang</option>
+                                                    <option value="Hanoi">Ha Noi</option>
+                                                    <option value="Hue">Hue</option>
+                                                    <option value="Sapa">Sapa</option>
+                                                    <option value="Phuquoc">Phu Quoc</option>
+                                                    <option value="Halong">Ha Long</option>
+                                                    <option value="Phanthiet">Phan Thiet</option>
+                                                    <option value="Mekong">Me Kong</option>
+                                                    <option value="Cuchi">Cu Chi</option>
+                                                    
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="single_field" >
+                                            <select class="wide" name="exp">
+                                                <option data-display="Experience"></option>
+                                                <option value="fresher">Fresher</option>
+                                                <option value="1year">1 Year </option>
+                                                <option value="2year">2 Year </option>
+                                                <option value="student">Student</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="single_field">
-                                            <select class="wide">
-                                                <option data-display="Experience">Experience</option>
-                                                <option value="0">Fresher</option>
-                                                <option value="1">1 Year </option>
-                                                <option value="2">2 Year </option>
-                                                <option value="3">More than 2 Year </option>
+                                            <select class="wide" name="language">
+                                                <option data-display="Language"></option>
+                                                <option value="English">English</option>
+                                                <option value="Russian">Russian</option>
+                                                <option value="Chinese">Chinese</option>
+                                                <option value="Spanish">Spanish</option>
+                                                <option value="Korean">Korean</option>
+                                                <option value="Japanese">Japanese</option>
+                                                <option value="French">French</option>
+                                                <option value="Vietnamese">Vietnamese</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="single_field">
-                                            <select class="wide">
-                                                <option data-display="Language">Language</option>
-                                              
-                                                <option value="1">English</option>
-                                                <option value="2">Russian</option>
-                                                <option value="3">Chinese</option>
-                                                <option value="4">Spanish</option>
-                                                <option value="5">Korean</option>
-                                                <option value="6">Japanese</option>
-                                                <option value="7">French</option>
-                                                <option value="8">Vietnamese</option>
+                                            <select class="wide" name="act_level">
+                                                <option data-display="Activity Level"></option>
+                                                <option value="Sightseeing" placeholder="">Sight Seeing</option>
+                                                <option value="Foodserve">Food Serve</option>
+                                                <option value="Exploration">Exploration</option>
+                                                <option value="Historical">Historical</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="single_field">
-                                            <select class="wide">
-                                                <option data-display="Activity">Activity Level</option>
-                                                <option value="0">Sightseeing</option>
-                                                <option value="2">Food Serve</option>
-                                                <option value="3">Historical</option>
-                                                <option value="1">Exploration</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="single_field">
-                                            <select class="wide">
-                                                <option data-display="Gender">Gender</option>
-                                                <option value="1">Male</option>
-                                                <option value="2">Female</option>
+                                            <select class="wide" name="gender">
+                                                <option data-display="Gender"></option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="range_wrap">
+                                    <label for="amount">Salary Estimate</label>
+                                    <div id="slider-range"></div>
+                                    <p>
+                                        <input type="text" id="amount" readonly style="border:0; color:#7A838B; font-size: 14px; font-weight:400;" name="price_hour">
+                                    </p>
+                                </div>
+                                <div class="reset_btn">
+                                    <input value="reset"  class="boxed-btn3 w-100" type="submit" name="reset">
+                                </div>
                             </form>
                         </div>
-                        <div class="range_wrap">
-                            <label for="amount">Price per hour estimate</label>
-                            <div id="slider-range"></div>
-                            <p>
-                                <input type="text" id="amount" readonly style="border:0; color:#7A838B; font-size: 14px; font-weight:400;">
-                            </p>
-                        </div>
-                        <div class="reset_btn">
-                            <button  class="boxed-btn3 w-100" type="submit">Reset</button>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -234,18 +236,18 @@
                             </div>
                         </div>
                     </div>
-
+                    {% if search_alert== True %}
                     <div class="job_lists m-0">
                         <div class="row">
-                            {%for i in range(1,50)%}
+                            {%for guide in results %}
                             {% set mod = (loop.index/14)|int%}
-                            {% set guide = loop.index - mod*14 %}
+                            {% set avatar = loop.index - mod*14 %}
                             
                             <div class="col-lg-12 col-md-12">
                                 <div class="single_jobs white-bg d-flex justify-content-between">
                                     <div class="jobs_left d-flex align-items-center">
                                         <div>
-                                            <img src="../static/avatar/{{guide}}.jpg" alt="" style=" background-repeat: no-repeat;
+                                            <img src="{{guide.avatar}}" alt="" style=" background-repeat: no-repeat;
                                             background-size: cover;
                                         
                                             overflow:hidden;
@@ -259,43 +261,52 @@
                                             &nbsp;&nbsp;
                                         </div>
                                         <div class="jobs_conetent">
-                                            <a href="infor_detail"><h4 >Tracy Do</h4></a>
+                                            <a href="#"><h4 >{{guide.name}}</h4></a>
                                             <div class="links_locat d-flex align-items-center">
                                                 <div class="location">
-                                                    <p> <i class="fa fa-map-marker"></i> Ho Chi Minh</p>
+                                                    <p> <i class="fa fa-map-marker"></i>{{guide.location}}</p>
                                                 </div>
                                                 <div class="location">
                                                     <p> <i class="fa fa-clock-o"></i> Active</p>
                                                 </div>
                                             </div>
                                             <div class="rate">
-                                                <input type="radio" id="star5{{guide}}" name="rate" value="5" />
-                                                <label for="star5{{guide}}" title="text">5 stars</label>
-                                                <input type="radio" id="star4{{guide}}" name="rate" value="4" />
-                                                <label for="star4{{guide}}" title="text">4 stars</label>
-                                                <input type="radio" id="star3{{guide}}" name="rate" value="3" />
-                                                <label for="star3{{guide}}" title="text">3 stars</label>
-                                                <input type="radio" id="star2{{guide}}" name="rate" value="2" />
-                                                <label for="star2{{guide}}" title="text">2 stars</label>
-                                                <input type="radio" id="star1{{guide}}" name="rate" value="1" />
-                                                <label for="star1{{guide}}" title="text">1 star</label>
+                                                <input type="radio" id="star5{{avatar}}" name="rate" value="5" />
+                                                <label for="star5{{avatar}}" title="text">5 stars</label>
+                                                <input type="radio" id="star4{{avatar}}" name="rate" value="4" />
+                                                <label for="star4{{avatar}}" title="text">4 stars</label>
+                                                <input type="radio" id="star3{{avatar}}" name="rate" value="3" />
+                                                <label for="star3{{avatar}}" title="text">3 stars</label>
+                                                <input type="radio" id="star2{{avatar}}" name="rate" value="2" />
+                                                <label for="star2{{avatar}}" title="text">2 stars</label>
+                                                <input type="radio" id="star1{{avatar}}" name="rate" value="1" />
+                                                <label for="star1{{avatar}}" title="text">1 star</label>
                                               </div>
                                         </div>
                                     </div>
-                                    <div class="jobs_right">
-                                        <div class="apply_now">
-                                            <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="infor_detail" class="boxed-btn3">Contact Now</a>
+                                    <form method="GET", action="infor_detail">
+                                        <div class="jobs_right">
+                                            <div class="apply_now">
+                                                <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
+                                                <input type="submit" name="detail_infor" value="Contact Now" class="boxed-btn3">
+                                                <input type="hidden" name="detailid" value="{{guide.id}}">
+                                            </div>
+                                            <div class="date">
+                                                <p>Active: 31 Jan 2020</p>
+                                            </div>
                                         </div>
-                                        <div class="date">
-                                            <p>Active: 31 Jan 2020</p>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                             {% endfor %}
                       
                     </div>
+                    {% else %}
+                    <div class="job_lists m-0">
+                      
+                    </div>
+                    {% endif %}
+
                 </div>
             </div>
         </div>
@@ -344,14 +355,14 @@
             $( "#slider-range" ).slider({
                 range: true,
                 min: 1,
-                max: 100,
-                values: [ 1, 100 ],
+                max: 20,
+                values: [ 1, 20 ],
                 slide: function( event, ui ) {
-                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] +"/ Year" );
+                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] +"/ Hour" );
                 }
             });
             $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                " - $" + $( "#slider-range" ).slider( "values", 1 ) + "/ Year");
+                " - $" + $( "#slider-range" ).slider( "values", 1 ) + "/ Hour");
         } );
         </script>
 </body>
