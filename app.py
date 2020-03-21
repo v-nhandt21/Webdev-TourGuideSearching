@@ -22,6 +22,7 @@ POSTGRES = {
 
 DEV=0
 if DEV == 0:
+    app.config['CSRF_ENABLED'] = True
     app.config['DEVELOPMENT'] = False
     app.config['DEBUG'] = False
     app.config['SQLALCHEMY_DATABASE_URI'] =    os.environ['DATABASE_URL']       #"postgresql:///oxo"         #'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
