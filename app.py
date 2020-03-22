@@ -8,6 +8,7 @@ from calendar import Calendar
 from datetime import date
 import random
 import hashlib
+import psycopg2
 app = Flask(__name__, static_url_path='/static')
 
 #app.config.from_object(os.environ['APP_SETTINGS'])
@@ -22,6 +23,9 @@ POSTGRES = {
 
 DEV=0
 if DEV == 0:
+    DATABASE_URL = os.environ['DATABASE_URL']
+
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     app.config['CSRF_ENABLED'] = True
     app.config['DEVELOPMENT'] = False
     app.config['DEBUG'] = False
@@ -39,6 +43,8 @@ app.config["ALLOWED_EXTENSIONS"] = ["jpg", "png", "pdf"]
 #'postgresql://noah:noahpostgres@localhost:5432/oxo' #
 #"postgresql:///oxo"#
 db.init_app(app)
+with app.app_context():
+    db.create_all()
 
 from models import Guide
 
